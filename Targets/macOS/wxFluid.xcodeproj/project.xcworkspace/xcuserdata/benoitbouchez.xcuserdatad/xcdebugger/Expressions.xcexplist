@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "CAIOMonitorDlg::TimerTask():wxIOMonitor.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "MonitorData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CLTCEditorFrame::DisplayLTCParameters(unsigned int):LTCEditorFrame.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "LTCConfig">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CIOSlotEditorFrame::OnUpload(wxCommandEvent&amp;):IOSlotEditorFrame.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "BoxAddress">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CKBEditorMainFrame::DisplayNetworkParameters(int):wxNetworkEditor.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "KissDatabase[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

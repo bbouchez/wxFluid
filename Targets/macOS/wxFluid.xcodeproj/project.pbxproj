@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF158B5523F2DDA500156F8F /* icons.icns in Resources */ = {isa = PBXBuildFile; fileRef = FF158B5323F2DD9000156F8F /* icons.icns */; };
+		FF2F6DD22C3C4D6900599218 /* knob.png in Resources */ = {isa = PBXBuildFile; fileRef = FF2F6DD12C3C4D6900599218 /* knob.png */; };
+		FF2F6DFE2C3C502000599218 /* SynthClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DE62C3C502000599218 /* SynthClass.cpp */; };
+		FF2F6DFF2C3C502000599218 /* wxFluidMainForms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DE72C3C502000599218 /* wxFluidMainForms.cpp */; };
+		FF2F6E002C3C502000599218 /* KnobControllers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DE82C3C502000599218 /* KnobControllers.cpp */; };
+		FF2F6E012C3C502000599218 /* VirtualKeyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DE92C3C502000599218 /* VirtualKeyboard.cpp */; };
+		FF2F6E022C3C502000599218 /* PropertiesForm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DEC2C3C502000599218 /* PropertiesForm.cpp */; };
+		FF2F6E032C3C502000599218 /* wxFluidMainFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DEE2C3C502000599218 /* wxFluidMainFrame.cpp */; };
+		FF2F6E042C3C502000599218 /* MIDIConfigurationDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DEF2C3C502000599218 /* MIDIConfigurationDialog.cpp */; };
+		FF2F6E052C3C502000599218 /* VirtualKeyboardForms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DF12C3C502000599218 /* VirtualKeyboardForms.cpp */; };
+		FF2F6E062C3C502000599218 /* wxFluidControllersForm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DF42C3C502000599218 /* wxFluidControllersForm.cpp */; };
+		FF2F6E072C3C502000599218 /* SynthConfigurationDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DF52C3C502000599218 /* SynthConfigurationDialog.cpp */; };
+		FF2F6E092C3C502000599218 /* wxFluidApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DFB2C3C502000599218 /* wxFluidApp.cpp */; };
+		FF2F6E0D2C3C53A900599218 /* wxAnimKnob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6E0B2C3C53A900599218 /* wxAnimKnob.cpp */; };
+		FF2F6E102C3C53C300599218 /* wxOnOffBitmapButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6E0F2C3C53C300599218 /* wxOnOffBitmapButton.cpp */; };
+		FF445ECA2C4DA031007856B6 /* RTP_MIDI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF445EC62C4DA031007856B6 /* RTP_MIDI.cpp */; };
+		FF445ECB2C4DA031007856B6 /* RTP_MIDI_AppleProtocol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF445EC82C4DA031007856B6 /* RTP_MIDI_AppleProtocol.cpp */; };
+		FF445ECC2C4DA031007856B6 /* RTP_MIDI_Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF445EC92C4DA031007856B6 /* RTP_MIDI_Input.cpp */; };
+		FF445ED22C4DA079007856B6 /* NetUMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF445ECD2C4DA079007856B6 /* NetUMP.cpp */; };
+		FF445ED32C4DA079007856B6 /* NetUMP_SessionProtocol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF445ECE2C4DA079007856B6 /* NetUMP_SessionProtocol.cpp */; };
+		FF445ED62C4DA213007856B6 /* icon256.png in Resources */ = {isa = PBXBuildFile; fileRef = FF445ED52C4DA213007856B6 /* icon256.png */; };
+		FF482CB12CCCF65500737F1A /* SFPresetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF482CB02CCCF65500737F1A /* SFPresetManager.cpp */; };
+		FF583F7623E6C0840047C809 /* libwx_osx_cocoa_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF583F7523E6C0840047C809 /* libwx_osx_cocoa_static.a */; };
+		FF6583F22B05608600DA0D92 /* network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF6583EA2B05608500DA0D92 /* network.cpp */; };
+		FF6583F62B05608600DA0D92 /* CThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF6583F02B05608600DA0D92 /* CThread.cpp */; };
+		FF7889C72C49ACFA00538F06 /* wxFluidFontSelectorForm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF7889C32C49ACFA00538F06 /* wxFluidFontSelectorForm.cpp */; };
+		FF9413732B0B50DF00E12321 /* SystemSleep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF9413712B0B50DF00E12321 /* SystemSleep.cpp */; };
+		FF9413772B0B575900E12321 /* keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9413762B0B575900E12321 /* keyboard.png */; };
+		FFBF40682C51717300D1664E /* ChorusWaveSine.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBF40662C51717300D1664E /* ChorusWaveSine.png */; };
+		FFBF40692C51717300D1664E /* ChorusWaveTri.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBF40672C51717300D1664E /* ChorusWaveTri.png */; };
+		FFDA31BA2D2705FD009F9E07 /* RtMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDA31B92D2705FD009F9E07 /* RtMidi.cpp */; };
+		FFDA31BC2D27063C009F9E07 /* UMP_Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = FFDA31BB2D27063C009F9E07 /* UMP_Transcoder.c */; };
+		FFFB63C92C4D084800E6CAFF /* EngineConfigFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFFB63C72C4D084800E6CAFF /* EngineConfigFile.cpp */; };
+		FFFB63CA2C4D084800E6CAFF /* PresetConfigFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFFB63C82C4D084800E6CAFF /* PresetConfigFile.cpp */; };
+		FFFC8A782C3EE83300538AF4 /* ButtonLED_OFF.png in Resources */ = {isa = PBXBuildFile; fileRef = FFFC8A762C3EE83300538AF4 /* ButtonLED_OFF.png */; };
+		FFFC8A792C3EE83300538AF4 /* ButtonLED_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = FFFC8A772C3EE83300538AF4 /* ButtonLED_ON.png */; };
+		FFFC8A7B2C3EE8EF00538AF4 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = FFFC8A7A2C3EE8EF00538AF4 /* background.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		40735927137088070077DE1B /* Info_cocoa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_cocoa.plist; sourceTree = "<group>"; };
+		407A752213B0E1EB006BC2D5 /* wxcocoa.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = wxcocoa.xcconfig; path = ../../build/osx/wxcocoa.xcconfig; sourceTree = SOURCE_ROOT; };
+		407A752313B0E1EB006BC2D5 /* wxdebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = wxdebug.xcconfig; path = ../../build/osx/wxdebug.xcconfig; sourceTree = SOURCE_ROOT; };
+		407A752413B0E1EB006BC2D5 /* wxrelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = wxrelease.xcconfig; path = ../../build/osx/wxrelease.xcconfig; sourceTree = SOURCE_ROOT; };
+		FF158B5323F2DD9000156F8F /* icons.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icons.icns; sourceTree = "<group>"; };
+		FF2F6DD12C3C4D6900599218 /* knob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = knob.png; path = Images/knob.png; sourceTree = "<group>"; };
+		FF2F6DE62C3C502000599218 /* SynthClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SynthClass.cpp; path = Sources/SynthClass.cpp; sourceTree = "<group>"; };
+		FF2F6DE72C3C502000599218 /* wxFluidMainForms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxFluidMainForms.cpp; path = Sources/wxFluidMainForms.cpp; sourceTree = "<group>"; };
+		FF2F6DE82C3C502000599218 /* KnobControllers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KnobControllers.cpp; path = Sources/KnobControllers.cpp; sourceTree = "<group>"; };
+		FF2F6DE92C3C502000599218 /* VirtualKeyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VirtualKeyboard.cpp; path = Sources/VirtualKeyboard.cpp; sourceTree = "<group>"; };
+		FF2F6DEA2C3C502000599218 /* PropertiesForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropertiesForm.h; path = Sources/PropertiesForm.h; sourceTree = "<group>"; };
+		FF2F6DEB2C3C502000599218 /* wxFluidMainFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxFluidMainFrame.h; path = Sources/wxFluidMainFrame.h; sourceTree = "<group>"; };
+		FF2F6DEC2C3C502000599218 /* PropertiesForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PropertiesForm.cpp; path = Sources/PropertiesForm.cpp; sourceTree = "<group>"; };
+		FF2F6DEE2C3C502000599218 /* wxFluidMainFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxFluidMainFrame.cpp; path = Sources/wxFluidMainFrame.cpp; sourceTree = "<group>"; };
+		FF2F6DEF2C3C502000599218 /* MIDIConfigurationDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MIDIConfigurationDialog.cpp; path = Sources/MIDIConfigurationDialog.cpp; sourceTree = "<group>"; };
+		FF2F6DF02C3C502000599218 /* KnobControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnobControllers.h; path = Sources/KnobControllers.h; sourceTree = "<group>"; };
+		FF2F6DF12C3C502000599218 /* VirtualKeyboardForms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VirtualKeyboardForms.cpp; path = Sources/VirtualKeyboardForms.cpp; sourceTree = "<group>"; };
+		FF2F6DF22C3C502000599218 /* wxFluidMainForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxFluidMainForms.h; path = Sources/wxFluidMainForms.h; sourceTree = "<group>"; };
+		FF2F6DF32C3C502000599218 /* wxFluidControllersForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxFluidControllersForm.h; path = Sources/wxFluidControllersForm.h; sourceTree = "<group>"; };
+		FF2F6DF42C3C502000599218 /* wxFluidControllersForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxFluidControllersForm.cpp; path = Sources/wxFluidControllersForm.cpp; sourceTree = "<group>"; };
+		FF2F6DF52C3C502000599218 /* SynthConfigurationDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SynthConfigurationDialog.cpp; path = Sources/SynthConfigurationDialog.cpp; sourceTree = "<group>"; };
+		FF2F6DF62C3C502000599218 /* SynthConfigurationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthConfigurationDialog.h; path = Sources/SynthConfigurationDialog.h; sourceTree = "<group>"; };
+		FF2F6DF72C3C502000599218 /* SynthClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthClass.h; path = Sources/SynthClass.h; sourceTree = "<group>"; };
+		FF2F6DF82C3C502000599218 /* MIDIConfigurationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MIDIConfigurationDialog.h; path = Sources/MIDIConfigurationDialog.h; sourceTree = "<group>"; };
+		FF2F6DF92C3C502000599218 /* VirtualKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VirtualKeyboard.h; path = Sources/VirtualKeyboard.h; sourceTree = "<group>"; };
+		FF2F6DFB2C3C502000599218 /* wxFluidApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxFluidApp.cpp; path = Sources/wxFluidApp.cpp; sourceTree = "<group>"; };
+		FF2F6DFC2C3C502000599218 /* wxFluidApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxFluidApp.h; path = Sources/wxFluidApp.h; sourceTree = "<group>"; };
+		FF2F6DFD2C3C502000599218 /* VirtualKeyboardForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VirtualKeyboardForms.h; path = Sources/VirtualKeyboardForms.h; sourceTree = "<group>"; };
+		FF2F6E0B2C3C53A900599218 /* wxAnimKnob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxAnimKnob.cpp; path = ../../../../SDK/beb/wxIndustrialControls/wxAnimKnob.cpp; sourceTree = "<group>"; };
+		FF2F6E0C2C3C53A900599218 /* wxAnimKnob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxAnimKnob.h; path = ../../../../SDK/beb/wxIndustrialControls/wxAnimKnob.h; sourceTree = "<group>"; };
+		FF2F6E0E2C3C53C300599218 /* wxOnOffBitmapButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxOnOffBitmapButton.h; path = ../../../../SDK/beb/wxIndustrialControls/wxOnOffBitmapButton.h; sourceTree = "<group>"; };
+		FF2F6E0F2C3C53C300599218 /* wxOnOffBitmapButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxOnOffBitmapButton.cpp; path = ../../../../SDK/beb/wxIndustrialControls/wxOnOffBitmapButton.cpp; sourceTree = "<group>"; };
+		FF2F6E112C3C66BE00599218 /* fluidsynth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fluidsynth.h; path = ../../../../../../opt/local/include/fluidsynth.h; sourceTree = "<group>"; };
+		FF2F6E122C3C691900599218 /* wxFluid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wxFluid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF445EC62C4DA031007856B6 /* RTP_MIDI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RTP_MIDI.cpp; path = "../RTP-MIDI/RTP_MIDI.cpp"; sourceTree = "<group>"; };
+		FF445EC72C4DA031007856B6 /* RTP_MIDI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTP_MIDI.h; path = "../RTP-MIDI/RTP_MIDI.h"; sourceTree = "<group>"; };
+		FF445EC82C4DA031007856B6 /* RTP_MIDI_AppleProtocol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RTP_MIDI_AppleProtocol.cpp; path = "../RTP-MIDI/RTP_MIDI_AppleProtocol.cpp"; sourceTree = "<group>"; };
+		FF445EC92C4DA031007856B6 /* RTP_MIDI_Input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RTP_MIDI_Input.cpp; path = "../RTP-MIDI/RTP_MIDI_Input.cpp"; sourceTree = "<group>"; };
+		FF445ECD2C4DA079007856B6 /* NetUMP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NetUMP.cpp; path = ../NetUMP/NetUMP.cpp; sourceTree = "<group>"; };
+		FF445ECE2C4DA079007856B6 /* NetUMP_SessionProtocol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NetUMP_SessionProtocol.cpp; path = ../NetUMP/NetUMP_SessionProtocol.cpp; sourceTree = "<group>"; };
+		FF445ECF2C4DA079007856B6 /* UMP_Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UMP_Transcoder.h; path = ../NetUMP/UMP_Transcoder.h; sourceTree = "<group>"; };
+		FF445ED02C4DA079007856B6 /* NetUMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetUMP.h; path = ../NetUMP/NetUMP.h; sourceTree = "<group>"; };
+		FF445ED52C4DA213007856B6 /* icon256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon256.png; path = images/icon256.png; sourceTree = "<group>"; };
+		FF482CAF2CCCF65500737F1A /* SFPresetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFPresetManager.h; path = Sources/SFPresetManager.h; sourceTree = "<group>"; };
+		FF482CB02CCCF65500737F1A /* SFPresetManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SFPresetManager.cpp; path = Sources/SFPresetManager.cpp; sourceTree = "<group>"; };
+		FF583F7523E6C0840047C809 /* libwx_osx_cocoa_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwx_osx_cocoa_static.a; path = ../libwx_osx_cocoa_static.a; sourceTree = "<group>"; };
+		FF6583EA2B05608500DA0D92 /* network.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = network.cpp; path = ../../../../SDK/beb/common_src/network.cpp; sourceTree = "<group>"; };
+		FF6583EC2B05608600DA0D92 /* CThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CThread.h; path = ../../../../SDK/beb/common_src/CThread.h; sourceTree = "<group>"; };
+		FF6583ED2B05608600DA0D92 /* TargetTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TargetTypes.h; path = ../../../../SDK/beb/common_src/TargetTypes.h; sourceTree = "<group>"; };
+		FF6583EE2B05608600DA0D92 /* network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = network.h; path = ../../../../SDK/beb/common_src/network.h; sourceTree = "<group>"; };
+		FF6583F02B05608600DA0D92 /* CThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CThread.cpp; path = ../../../../SDK/beb/common_src/CThread.cpp; sourceTree = "<group>"; };
+		FF7889BF2C49ACFA00538F06 /* wxFluidFontSelectorForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxFluidFontSelectorForm.h; path = Sources/wxFluidFontSelectorForm.h; sourceTree = "<group>"; };
+		FF7889C32C49ACFA00538F06 /* wxFluidFontSelectorForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxFluidFontSelectorForm.cpp; path = Sources/wxFluidFontSelectorForm.cpp; sourceTree = "<group>"; };
+		FF9413712B0B50DF00E12321 /* SystemSleep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SystemSleep.cpp; path = ../../../../SDK/beb/common_src/SystemSleep.cpp; sourceTree = "<group>"; };
+		FF9413722B0B50DF00E12321 /* SystemSleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemSleep.h; path = ../../../../SDK/beb/common_src/SystemSleep.h; sourceTree = "<group>"; };
+		FF9413762B0B575900E12321 /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyboard.png; path = Images/keyboard.png; sourceTree = "<group>"; };
+		FFA831EB2D28322100E9886B /* wxFluidAppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxFluidAppConfig.h; path = Sources/wxFluidAppConfig.h; sourceTree = "<group>"; };
+		FFBF40662C51717300D1664E /* ChorusWaveSine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ChorusWaveSine.png; path = images/ChorusWaveSine.png; sourceTree = "<group>"; };
+		FFBF40672C51717300D1664E /* ChorusWaveTri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ChorusWaveTri.png; path = images/ChorusWaveTri.png; sourceTree = "<group>"; };
+		FFDA31B82D2705FD009F9E07 /* RtMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RtMidi.h; path = "../rtmidi-6.0.0/RtMidi.h"; sourceTree = "<group>"; };
+		FFDA31B92D2705FD009F9E07 /* RtMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RtMidi.cpp; path = "../rtmidi-6.0.0/RtMidi.cpp"; sourceTree = "<group>"; };
+		FFDA31BB2D27063C009F9E07 /* UMP_Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = UMP_Transcoder.c; path = ../NetUMP/UMP_Transcoder.c; sourceTree = "<group>"; };
+		FFFB63C72C4D084800E6CAFF /* EngineConfigFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EngineConfigFile.cpp; path = Sources/EngineConfigFile.cpp; sourceTree = "<group>"; };
+		FFFB63C82C4D084800E6CAFF /* PresetConfigFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PresetConfigFile.cpp; path = Sources/PresetConfigFile.cpp; sourceTree = "<group>"; };
+		FFFC8A762C3EE83300538AF4 /* ButtonLED_OFF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonLED_OFF.png; path = images/ButtonLED_OFF.png; sourceTree = "<group>"; };
+		FFFC8A772C3EE83300538AF4 /* ButtonLED_ON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonLED_ON.png; path = images/ButtonLED_ON.png; sourceTree = "<group>"; };
+		FFFC8A7A2C3EE8EF00538AF4 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = images/background.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		405B1AC410EF253300676938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF583F7623E6C0840047C809 /* libwx_osx_cocoa_static.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29B97314FDCFA39411CA2CEA /* minimal_cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				FFB0AED823FC5151006E8B13 /* Images */,
+				FF158B5323F2DD9000156F8F /* icons.icns */,
+				FF583F7523E6C0840047C809 /* libwx_osx_cocoa_static.a */,
+				407A752213B0E1EB006BC2D5 /* wxcocoa.xcconfig */,
+				407A752313B0E1EB006BC2D5 /* wxdebug.xcconfig */,
+				407A752413B0E1EB006BC2D5 /* wxrelease.xcconfig */,
+				40735927137088070077DE1B /* Info_cocoa.plist */,
+				405B1A9710EF227D00676938 /* Sources */,
+				FF2F6E122C3C691900599218 /* wxFluid.app */,
+			);
+			name = minimal_cocoa;
+			sourceTree = "<group>";
+		};
+		405B1A9710EF227D00676938 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FF445EC52C4DA018007856B6 /* NetUMP */,
+				FF445EC42C4DA00E007856B6 /* RTP-MIDI */,
+				FF2F6E112C3C66BE00599218 /* fluidsynth.h */,
+				FF2F6E0F2C3C53C300599218 /* wxOnOffBitmapButton.cpp */,
+				FF2F6E0E2C3C53C300599218 /* wxOnOffBitmapButton.h */,
+				FF2F6E0B2C3C53A900599218 /* wxAnimKnob.cpp */,
+				FF2F6E0C2C3C53A900599218 /* wxAnimKnob.h */,
+				FF2F6DE52C3C4FF200599218 /* wxFluid */,
+				FFA08BB42B0566890024BD28 /* RtMidi */,
+				FFD918BD23EA0FC500D6E434 /* SDK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		FF2F6DE52C3C4FF200599218 /* wxFluid */ = {
+			isa = PBXGroup;
+			children = (
+				FFA831EB2D28322100E9886B /* wxFluidAppConfig.h */,
+				FF2F6E0A2C3C502C00599218 /* wxFormBuilder */,
+				FF482CB02CCCF65500737F1A /* SFPresetManager.cpp */,
+				FF482CAF2CCCF65500737F1A /* SFPresetManager.h */,
+				FFFB63C72C4D084800E6CAFF /* EngineConfigFile.cpp */,
+				FFFB63C82C4D084800E6CAFF /* PresetConfigFile.cpp */,
+				FF2F6DE82C3C502000599218 /* KnobControllers.cpp */,
+				FF2F6DF02C3C502000599218 /* KnobControllers.h */,
+				FF2F6DEF2C3C502000599218 /* MIDIConfigurationDialog.cpp */,
+				FF2F6DF82C3C502000599218 /* MIDIConfigurationDialog.h */,
+				FF2F6DE62C3C502000599218 /* SynthClass.cpp */,
+				FF2F6DF72C3C502000599218 /* SynthClass.h */,
+				FF2F6DF52C3C502000599218 /* SynthConfigurationDialog.cpp */,
+				FF2F6DF62C3C502000599218 /* SynthConfigurationDialog.h */,
+				FF2F6DE92C3C502000599218 /* VirtualKeyboard.cpp */,
+				FF2F6DF92C3C502000599218 /* VirtualKeyboard.h */,
+				FF2F6DFB2C3C502000599218 /* wxFluidApp.cpp */,
+				FF2F6DFC2C3C502000599218 /* wxFluidApp.h */,
+				FF2F6DEE2C3C502000599218 /* wxFluidMainFrame.cpp */,
+				FF2F6DEB2C3C502000599218 /* wxFluidMainFrame.h */,
+			);
+			name = wxFluid;
+			sourceTree = "<group>";
+		};
+		FF2F6E0A2C3C502C00599218 /* wxFormBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				FF7889C32C49ACFA00538F06 /* wxFluidFontSelectorForm.cpp */,
+				FF7889BF2C49ACFA00538F06 /* wxFluidFontSelectorForm.h */,
+				FF2F6DE72C3C502000599218 /* wxFluidMainForms.cpp */,
+				FF2F6DF22C3C502000599218 /* wxFluidMainForms.h */,
+				FF2F6DF42C3C502000599218 /* wxFluidControllersForm.cpp */,
+				FF2F6DF32C3C502000599218 /* wxFluidControllersForm.h */,
+				FF2F6DF12C3C502000599218 /* VirtualKeyboardForms.cpp */,
+				FF2F6DFD2C3C502000599218 /* VirtualKeyboardForms.h */,
+				FF2F6DEC2C3C502000599218 /* PropertiesForm.cpp */,
+				FF2F6DEA2C3C502000599218 /* PropertiesForm.h */,
+			);
+			name = wxFormBuilder;
+			sourceTree = "<group>";
+		};
+		FF445EC42C4DA00E007856B6 /* RTP-MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				FF445EC82C4DA031007856B6 /* RTP_MIDI_AppleProtocol.cpp */,
+				FF445EC92C4DA031007856B6 /* RTP_MIDI_Input.cpp */,
+				FF445EC62C4DA031007856B6 /* RTP_MIDI.cpp */,
+				FF445EC72C4DA031007856B6 /* RTP_MIDI.h */,
+			);
+			name = "RTP-MIDI";
+			sourceTree = "<group>";
+		};
+		FF445EC52C4DA018007856B6 /* NetUMP */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA31BB2D27063C009F9E07 /* UMP_Transcoder.c */,
+				FF445ECE2C4DA079007856B6 /* NetUMP_SessionProtocol.cpp */,
+				FF445ECD2C4DA079007856B6 /* NetUMP.cpp */,
+				FF445ED02C4DA079007856B6 /* NetUMP.h */,
+				FF445ECF2C4DA079007856B6 /* UMP_Transcoder.h */,
+			);
+			name = NetUMP;
+			sourceTree = "<group>";
+		};
+		FFA08BB42B0566890024BD28 /* RtMidi */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA31B92D2705FD009F9E07 /* RtMidi.cpp */,
+				FFDA31B82D2705FD009F9E07 /* RtMidi.h */,
+			);
+			name = RtMidi;
+			sourceTree = "<group>";
+		};
+		FFB0AED823FC5151006E8B13 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF40662C51717300D1664E /* ChorusWaveSine.png */,
+				FFBF40672C51717300D1664E /* ChorusWaveTri.png */,
+				FF445ED52C4DA213007856B6 /* icon256.png */,
+				FFFC8A7A2C3EE8EF00538AF4 /* background.png */,
+				FFFC8A762C3EE83300538AF4 /* ButtonLED_OFF.png */,
+				FFFC8A772C3EE83300538AF4 /* ButtonLED_ON.png */,
+				FF2F6DD12C3C4D6900599218 /* knob.png */,
+				FF9413762B0B575900E12321 /* keyboard.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		FFD918BD23EA0FC500D6E434 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				FF9413712B0B50DF00E12321 /* SystemSleep.cpp */,
+				FF9413722B0B50DF00E12321 /* SystemSleep.h */,
+				FF6583F02B05608600DA0D92 /* CThread.cpp */,
+				FF6583EC2B05608600DA0D92 /* CThread.h */,
+				FF6583EA2B05608500DA0D92 /* network.cpp */,
+				FF6583EE2B05608600DA0D92 /* network.h */,
+				FF6583ED2B05608600DA0D92 /* TargetTypes.h */,
+			);
+			name = SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		405B1ABF10EF253300676938 /* static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 405B1AC810EF253300676938 /* Build configuration list for PBXNativeTarget "static" */;
+			buildPhases = (
+				405B1AC210EF253300676938 /* Sources */,
+				405B1AC410EF253300676938 /* Frameworks */,
+				FF158B5423F2DDA000156F8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = static;
+			productInstallPath = "$(HOME)/Applications";
+			productName = minimal_cocoa;
+			productReference = FF2F6E122C3C691900599218 /* wxFluid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "wxFluid" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* minimal_cocoa */;
+			productRefGroup = 29B97314FDCFA39411CA2CEA /* minimal_cocoa */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				405B1ABF10EF253300676938 /* static */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF158B5423F2DDA000156F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF158B5523F2DDA500156F8F /* icons.icns in Resources */,
+				FF445ED62C4DA213007856B6 /* icon256.png in Resources */,
+				FFFC8A7B2C3EE8EF00538AF4 /* background.png in Resources */,
+				FFBF40682C51717300D1664E /* ChorusWaveSine.png in Resources */,
+				FF9413772B0B575900E12321 /* keyboard.png in Resources */,
+				FF2F6DD22C3C4D6900599218 /* knob.png in Resources */,
+				FFBF40692C51717300D1664E /* ChorusWaveTri.png in Resources */,
+				FFFC8A782C3EE83300538AF4 /* ButtonLED_OFF.png in Resources */,
+				FFFC8A792C3EE83300538AF4 /* ButtonLED_ON.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		405B1AC210EF253300676938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFB63CA2C4D084800E6CAFF /* PresetConfigFile.cpp in Sources */,
+				FF2F6E052C3C502000599218 /* VirtualKeyboardForms.cpp in Sources */,
+				FF445ECC2C4DA031007856B6 /* RTP_MIDI_Input.cpp in Sources */,
+				FF445ED22C4DA079007856B6 /* NetUMP.cpp in Sources */,
+				FF445ED32C4DA079007856B6 /* NetUMP_SessionProtocol.cpp in Sources */,
+				FF6583F22B05608600DA0D92 /* network.cpp in Sources */,
+				FF482CB12CCCF65500737F1A /* SFPresetManager.cpp in Sources */,
+				FF2F6E072C3C502000599218 /* SynthConfigurationDialog.cpp in Sources */,
+				FF2F6E022C3C502000599218 /* PropertiesForm.cpp in Sources */,
+				FFFB63C92C4D084800E6CAFF /* EngineConfigFile.cpp in Sources */,
+				FF6583F62B05608600DA0D92 /* CThread.cpp in Sources */,
+				FFDA31BA2D2705FD009F9E07 /* RtMidi.cpp in Sources */,
+				FF2F6E102C3C53C300599218 /* wxOnOffBitmapButton.cpp in Sources */,
+				FF2F6E012C3C502000599218 /* VirtualKeyboard.cpp in Sources */,
+				FF2F6DFF2C3C502000599218 /* wxFluidMainForms.cpp in Sources */,
+				FF2F6DFE2C3C502000599218 /* SynthClass.cpp in Sources */,
+				FFDA31BC2D27063C009F9E07 /* UMP_Transcoder.c in Sources */,
+				FF445ECB2C4DA031007856B6 /* RTP_MIDI_AppleProtocol.cpp in Sources */,
+				FF445ECA2C4DA031007856B6 /* RTP_MIDI.cpp in Sources */,
+				FF2F6E042C3C502000599218 /* MIDIConfigurationDialog.cpp in Sources */,
+				FF2F6E032C3C502000599218 /* wxFluidMainFrame.cpp in Sources */,
+				FF2F6E002C3C502000599218 /* KnobControllers.cpp in Sources */,
+				FF7889C72C49ACFA00538F06 /* wxFluidFontSelectorForm.cpp in Sources */,
+				FF2F6E092C3C502000599218 /* wxFluidApp.cpp in Sources */,
+				FF2F6E062C3C502000599218 /* wxFluidControllersForm.cpp in Sources */,
+				FF2F6E0D2C3C53A900599218 /* wxAnimKnob.cpp in Sources */,
+				FF9413732B0B50DF00E12321 /* SystemSleep.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		405B1AC910EF253300676938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 407A752213B0E1EB006BC2D5 /* wxcocoa.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(WX_PREPROCESSOR_DEFINITIONS)",
+					__TARGET_MAC__,
+					__MACOSX_CORE__,
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(WXROOT)/src/tiff/libtiff\"",
+					"\"$(WXROOT)/src/regex\"",
+					/Users/benoitbouchez/SDK/Common,
+					"\"$(WXROOT)/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/benoitbouchez/MIDI20/wxApps/applications,
+					/opt/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					CoreMIDI,
+					"-lfluidsynth",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.BEB.wxFluid;
+				PRODUCT_NAME = wxFluid;
+				USER_HEADER_SEARCH_PATHS = "\"$(WXROOT)/include\" \"$(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include\" \"$(WXROOT)/src/zlib\" \"$(WXROOT)/src/jpeg\" \"$(WXROOT)/src/png\" \"$(WXROOT)/src/expat/expat/lib\" \"$(WXROOT)/src/tiff/libtiff\" \"$(WXROOT)/src/stc/scintilla/src\" \"$(WXROOT)/src/stc/scintilla/include\" \"$(WXROOT)/src/stc/scintilla/lexlib\"";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Debug;
+		};
+		405B1ACA10EF253300676938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 407A752213B0E1EB006BC2D5 /* wxcocoa.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(WX_PREPROCESSOR_DEFINITIONS)",
+					__TARGET_MAC__,
+					__MACOSX_CORE__,
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(WXROOT)/src/tiff/libtiff\"",
+					"\"$(WXROOT)/src/regex\"",
+					/Users/benoitbouchez/SDK/Common,
+					"\"$(WXROOT)/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/benoitbouchez/MIDI20/wxApps/applications,
+					/opt/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					CoreMIDI,
+					"-lfluidsynth",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.BEB.wxFluid;
+				PRODUCT_NAME = wxFluid;
+				USER_HEADER_SEARCH_PATHS = "\"$(WXROOT)/include\" \"$(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include\" \"$(WXROOT)/src/zlib\" \"$(WXROOT)/src/jpeg\" \"$(WXROOT)/src/png\" \"$(WXROOT)/src/expat/expat/lib\" \"$(WXROOT)/src/tiff/libtiff\" \"$(WXROOT)/src/stc/scintilla/src\" \"$(WXROOT)/src/stc/scintilla/include\" \"$(WXROOT)/src/stc/scintilla/lexlib\"";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 407A752313B0E1EB006BC2D5 /* wxdebug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info_cocoa.plist;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				USER_HEADER_SEARCH_PATHS = "";
+				WXROOT = "$(PROJECT_DIR)/../..";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 407A752413B0E1EB006BC2D5 /* wxrelease.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info_cocoa.plist;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				USER_HEADER_SEARCH_PATHS = "";
+				WXROOT = "$(PROJECT_DIR)/../..";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		405B1AC810EF253300676938 /* Build configuration list for PBXNativeTarget "static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				405B1AC910EF253300676938 /* Debug */,
+				405B1ACA10EF253300676938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "wxFluid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
