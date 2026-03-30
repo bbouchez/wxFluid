@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxFluid" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/wxFluid" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Debug" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/wxFluid" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Release" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`wx-config --cflags`" />
+			<Add option="-D__TARGET_LINUX__" />
+			<Add option="-D__LINUX_ALSA__" />
+			<Add directory="/home/benoit/SDK/beb/common_src" />
+			<Add directory="../RTP-MIDI" />
+			<Add directory="../NetUMP" />
+			<Add directory="../rtmidi-5.0.0" />
+			<Add directory="/home/benoit/SDK/wxIndustrialControls" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+			<Add library="fluidsynth" />
+			<Add library="asound" />
+		</Linker>
+		<Unit filename="../../../../SDK/beb/common_src/CThread.cpp" />
+		<Unit filename="../../../../SDK/beb/common_src/CThread.h" />
+		<Unit filename="../../../../SDK/beb/common_src/SystemSleep.cpp" />
+		<Unit filename="../../../../SDK/beb/common_src/SystemSleep.h" />
+		<Unit filename="../../../../SDK/beb/common_src/TargetTypes.h" />
+		<Unit filename="../../../../SDK/beb/common_src/network.cpp" />
+		<Unit filename="../../../../SDK/beb/common_src/network.h" />
+		<Unit filename="../../../../SDK/wxIndustrialControls/wxAnimKnob.cpp" />
+		<Unit filename="../../../../SDK/wxIndustrialControls/wxAnimKnob.h" />
+		<Unit filename="../../../../SDK/wxIndustrialControls/wxOnOffBitmapButton.cpp" />
+		<Unit filename="../../../../SDK/wxIndustrialControls/wxOnOffBitmapButton.h" />
+		<Unit filename="../NetUMP/NetUMP.cpp" />
+		<Unit filename="../NetUMP/NetUMP.h" />
+		<Unit filename="../NetUMP/NetUMP_SessionProtocol.cpp" />
+		<Unit filename="../NetUMP/UMP_Transcoder.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../NetUMP/UMP_Transcoder.h" />
+		<Unit filename="../RTP-MIDI/RTP_MIDI.cpp" />
+		<Unit filename="../RTP-MIDI/RTP_MIDI.h" />
+		<Unit filename="../RTP-MIDI/RTP_MIDI_AppleProtocol.cpp" />
+		<Unit filename="../RTP-MIDI/RTP_MIDI_Input.cpp" />
+		<Unit filename="../rtmidi-5.0.0/RtMidi.cpp" />
+		<Unit filename="../rtmidi-5.0.0/RtMidi.h" />
+		<Unit filename="Sources/EngineConfigFile.cpp" />
+		<Unit filename="Sources/MIDIConfigurationDialog.cpp" />
+		<Unit filename="Sources/MIDIConfigurationDialog.h" />
+		<Unit filename="Sources/PresetConfigFile.cpp" />
+		<Unit filename="Sources/PropertiesForm.cpp" />
+		<Unit filename="Sources/PropertiesForm.h" />
+		<Unit filename="Sources/SFPresetManager.cpp" />
+		<Unit filename="Sources/SFPresetManager.h" />
+		<Unit filename="Sources/SynthClass.cpp" />
+		<Unit filename="Sources/SynthClass.h" />
+		<Unit filename="Sources/SynthConfigurationDialog.cpp" />
+		<Unit filename="Sources/SynthConfigurationDialog.h" />
+		<Unit filename="Sources/VirtualKeyboard.cpp" />
+		<Unit filename="Sources/VirtualKeyboard.h" />
+		<Unit filename="Sources/VirtualKeyboardForms.cpp" />
+		<Unit filename="Sources/VirtualKeyboardForms.h" />
+		<Unit filename="Sources/wxFluidApp.cpp" />
+		<Unit filename="Sources/wxFluidApp.h" />
+		<Unit filename="Sources/wxFluidAppConfig.h" />
+		<Unit filename="Sources/wxFluidControllersForm.cpp" />
+		<Unit filename="Sources/wxFluidControllersForm.h" />
+		<Unit filename="Sources/wxFluidFontSelectorForm.cpp" />
+		<Unit filename="Sources/wxFluidFontSelectorForm.h" />
+		<Unit filename="Sources/wxFluidMainForms.cpp" />
+		<Unit filename="Sources/wxFluidMainForms.h" />
+		<Unit filename="Sources/wxFluidMainFrame.cpp" />
+		<Unit filename="Sources/wxFluidMainFrame.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
