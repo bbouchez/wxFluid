@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\rtmidi-5.0.0\RtMidi.cpp">
+      <Filter>Sources\rtmidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\SDK\beb\common_src\SystemSleep.cpp">
+      <Filter>Sources\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\wxFluidApp.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\wxFluidMainFrame.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SynthClass.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtaudio\RtAudio.cpp">
+      <Filter>Sources\rtaudio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\PropertiesForm.cpp">
+      <Filter>Sources\wxFormBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\VirtualKeyboardForms.cpp">
+      <Filter>Sources\wxFormBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\wxFluidMainForms.cpp">
+      <Filter>Sources\wxFormBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTP-MIDI\RTP_MIDI.cpp">
+      <Filter>Sources\RTP-MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTP-MIDI\RTP_MIDI_AppleProtocol.cpp">
+      <Filter>Sources\RTP-MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RTP-MIDI\RTP_MIDI_Input.cpp">
+      <Filter>Sources\RTP-MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\SDK\beb\common_src\network.cpp">
+      <Filter>Sources\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NetUMP\NetUMP.cpp">
+      <Filter>Sources\NetUMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NetUMP\NetUMP_SessionProtocol.cpp">
+      <Filter>Sources\NetUMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\SDK\beb\wxIndustrialControls\wxAnimKnob.cpp">
+      <Filter>Sources\wxIndustrialControls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\SDK\beb\wxIndustrialControls\wxOnOffBitmapButton.cpp">
+      <Filter>Sources\wxIndustrialControls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\wxFluidControllersForm.cpp">
+      <Filter>Sources\wxFormBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\wxFluidFontSelectorForm.cpp">
+      <Filter>Sources\wxFormBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\EngineConfigFile.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\PresetConfigFile.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\KnobControllers.cpp">
+      <Filter>Sources\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\MIDIConfigurationDialog.cpp">
+      <Filter>Sources\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SFPresetManager.cpp">
+      <Filter>Sources\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NetUMP\UMP_Transcoder.c">
+      <Filter>Sources\NetUMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SynthConfigurationDialog.cpp">
+      <Filter>Sources\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\SDK\beb\common_src\CThread.cpp">
+      <Filter>Sources\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\VirtualKeyboard.cpp">
+      <Filter>Sources\Forms</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\fluidsynth\include\fluidsynth.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtmidi-5.0.0\RtMidi.h">
+      <Filter>Sources\rtmidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\SDK\beb\common_src\SystemSleep.h">
+      <Filter>Sources\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\SDK\beb\common_src\TargetTypes.h">
+      <Filter>Sources\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\wxFluidApp.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\wxFluidMainFrame.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\SynthClass.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtaudio\RtAudio.h">
+      <Filter>Sources\rtaudio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\PropertiesForm.h">
+      <Filter>Sources\wxFormBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\VirtualKeyboardForms.h">
+      <Filter>Sources\wxFormBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\wxFluidMainForms.h">
+      <Filter>Sources\wxFormBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RTP-MIDI\RTP_MIDI.h">
+      <Filter>Sources\RTP-MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\SDK\beb\common_src\network.h">
+      <Filter>Sources\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NetUMP\NetUMP.h">
+      <Filter>Sources\NetUMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NetUMP\UMP_Transcoder.h">
+      <Filter>Sources\NetUMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\SDK\beb\wxIndustrialControls\wxAnimKnob.h">
+      <Filter>Sources\wxIndustrialControls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\SDK\beb\wxIndustrialControls\wxOnOffBitmapButton.h">
+      <Filter>Sources\wxIndustrialControls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\wxFluidControllersForm.h">
+      <Filter>Sources\wxFormBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\wxFluidFontSelectorForm.h">
+      <Filter>Sources\wxFormBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\KnobControllers.h">
+      <Filter>Sources\Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\MIDIConfigurationDialog.h">
+      <Filter>Sources\Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\wxFluidAppConfig.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\SFPresetManager.h">
+      <Filter>Sources\Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\SynthConfigurationDialog.h">
+      <Filter>Sources\Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\SDK\beb\common_src\CThread.h">
+      <Filter>Sources\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\VirtualKeyboard.h">
+      <Filter>Sources\Forms</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{5957046b-91dd-4ef7-883e-b5511c4ea670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\SDK">
+      <UniqueIdentifier>{012695c2-9373-4cdd-ac0f-dcc03d1646b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\rtmidi">
+      <UniqueIdentifier>{d7606c94-0ab9-47fa-922e-a1f523f779c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{16489942-10cd-4d48-bc79-316ea0241828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\rtaudio">
+      <UniqueIdentifier>{adeaf8e2-5d2b-4041-a248-7770f7526e84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\wxIndustrialControls">
+      <UniqueIdentifier>{e302ef78-402f-4902-9023-b67138fc0913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\RTP-MIDI">
+      <UniqueIdentifier>{63027881-9061-4da1-8978-19538bf44bc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\NetUMP">
+      <UniqueIdentifier>{b58ade78-3a74-4ea5-a955-8752ebf1843e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\wxFormBuilder">
+      <UniqueIdentifier>{12774d47-941b-4d31-b957-d389198e6db4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Forms">
+      <UniqueIdentifier>{66f60f99-8c64-4655-95c0-07b93bea495a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="wxfluid.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

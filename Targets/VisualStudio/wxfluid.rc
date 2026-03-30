@@ -1,0 +1,37 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+AAAAAAAA                ICON                    "icon.ico"
+
+APPICON                 ICON                    "icon.ico"
+
+WXICON_AAA              ICON                    "std.ico"
+
+WXICON_SMALL_CLOSED_FOLDER ICON                    "folder1.ico"
+
+WXICON_SMALL_OPEN_FOLDER ICON                    "folder2.ico"
+
+WXICON_SMALL_FILE       ICON                    "file1.ico"
+
+WXICON_SMALL_COMPUTER   ICON                    "computer.ico"
+
+WXICON_SMALL_DRIVE      ICON                    "drive.ico"
+
+WXICON_SMALL_CDROM      ICON                    "cdrom.ico"
+
+WXICON_SMALL_FLOPPY     ICON                    "floppy.ico"
+
+WXICON_SMALL_REMOVEABLE ICON                    "removble.ico"
+
+
+background              RCDATA                  "D:\\MIDI20\\Projects\\wxApps\\wxFluid\\Images\\background.png"
+knob					RCDATA					"D:\\MIDI20\\Projects\\wxApps\\wxFluid\\Images\\knob.png"
+buttonled_off			RCDATA					"D:\\MIDI20\\Projects\\wxApps\\wxFluid\\Images\\ButtonLED_OFF.png"
+buttonled_on			RCDATA					"D:\\MIDI20\\Projects\\wxApps\\wxFluid\\Images\\ButtonLED_ON.png"
+choruswavesine			RCDATA					"D:\\MIDI20\\Projects\\wxApps\\wxFluid\\Images\\ChorusWaveSine.png"
+choruswavetri			RCDATA					"D:\\MIDI20\\Projects\\wxApps\\wxFluid\\Images\\ChorusWaveTri.png"
+keyboard				RCDATA					"D:\\MIDI20\\Projects\\wxApps\\wxFluid\\Images\\keyboard.png"
+icon256					RCDATA					"D:\\MIDI20\\Projects\\wxApps\\wxFluid\\Images\\icon256.png"
