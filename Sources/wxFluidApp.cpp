@@ -50,6 +50,13 @@
 	- Removed call to pthread_exit() which generates a memory leak on Windows
 	- Changed order of columns in the Preset selector to help user understand he needs to select the SoundFont first...
 	- Memory leak corrected (SoundFond selector dialog was not deleted after closing)
+
+2.1.0 : 02/04/2026
+	- Force unload/reload soundfonts when a change is detected in the Preset Selection dialog (FluidSynth sometimes ignore the preset change made in the dialog after a SoundFOnt is loaded, no idea why...)
+	- Bugs corrected :
+		- if Clear Presets menu was called, the Save command was saving the last file name. Now it opens a Save As dialog
+		- About box displayed a wxWidgets alignment warning
+		- WASAPI choice for Windows was giving a false warning message ("no WASAPI device available"), but WASAPI selection was possible
 */
 
 #include "wxFluidApp.h"

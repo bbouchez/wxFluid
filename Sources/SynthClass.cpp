@@ -252,7 +252,7 @@ void CwxFluidSynth::StopSynth(void)
 
 	for (int SFNum = 0; SFNum < MAX_SOUND_FONTS; SFNum++)
 	{
-		UnloadSoundFont(SFNum);
+		UnloadSoundFont(SFNum, false);
 	}
 
 	delete_fluid_audio_driver(this->adriver);
@@ -497,14 +497,15 @@ int CwxFluidSynth::LoadSoundFont(wxString& SFPath, unsigned int Position)
 }  // CwxFluidSynth::LoadSoundFont
 // -----------------------------------------------------
 
-void CwxFluidSynth::UnloadSoundFont(unsigned int Position)
+void CwxFluidSynth::UnloadSoundFont(unsigned int Position, bool ClearNameInConfig)
 {
     if (this->FontID[Position] == -1) return;       // No SoundFont to unload
 
 	fluid_synth_sfunload(this->synth, this->FontID[Position], 1);
 
 	this->FontID[Position] = -1;
-	this->SoundFontFilePath[Position] = "";
+	if (ClearNameInConfig)
+		this->SoundFontFilePath[Position] = "";
 }  // CwxFluidSynth::UnloadSoundFont
 // -----------------------------------------------------
 
@@ -692,20 +693,7 @@ void CwxFluidSynth::RunNetworkMIDI(void)
 
 void CwxFluidSynth::ClearPresets(void)
 {
-	// We ask first to unload the soundfonts. FluidSynth does it "lazy", so a SoudnFont is only unloaded
-	// when all channels using the SoundFont stop playing. This "marks" the SoundFont as ready to be unloaded
-	for (int SFNum = 0; SFNum < MAX_SOUND_FONTS; SFNum++)
-	{
-        UnloadSoundFont(SFNum);
-	}
-
-	// Now that all SoundFonts are marked for unloading, we force all generators to stop so the SoundFonts will be unloaded
-	// even if they were still being used by a channel
-	for (int Channel = 0; Channel < 16; Channel++)
-	{
-		fluid_synth_all_sounds_off(this->synth, Channel);
-		this->SoundFontSlotForMIDIChannel[Channel] = -1;
-	}
+	this->UnloadAllSoundFonts(true);
 
 	this->VolumeControl = DEFAULT_VOLUME;
 	this->ReverbControlOn = false;
@@ -722,14 +710,40 @@ void CwxFluidSynth::ClearPresets(void)
 }  // CwxFluidSynth::ClearPresets
 // -----------------------------------------------------
 
+void CwxFluidSynth::UnloadAllSoundFonts(bool ClearNameInConfig)
+{
+	// We ask first to unload the soundfonts. FluidSynth does it "lazy", so a SoundFont is only unloaded
+	// when all channels using the SoundFont stop playing. This "marks" the SoundFont as ready to be unloaded
+	for (int SFNum = 0; SFNum < MAX_SOUND_FONTS; SFNum++)
+	{
+		UnloadSoundFont(SFNum, ClearNameInConfig);
+	}
+
+	// Now that all SoundFonts are marked for unloading, we force all generators to stop so the SoundFonts will be unloaded
+	// even if they were still being used by a channel
+	for (int Channel = 0; Channel < 16; Channel++)
+	{
+		fluid_synth_all_sounds_off(this->synth, Channel);
+		//this->SoundFontSlotForMIDIChannel[Channel] = -1;
+	}
+}  // CwxFluidSynth::UnloadAllSoundFonts
+// -----------------------------------------------------
+
 void CwxFluidSynth::LoadPresetFile(wxString PresetFileName)
 {
-	int Slot;
-    int Channel;
-	int SFID;
-
 	this->ClearPresets();		// To be sure all is clean before we continue
 	this->LoadPresetConfiguration(PresetFileName);
+	this->ReloadPresetsFromConfigData();
+}  // CwxFluidSynth::LoadPresetFile
+// -----------------------------------------------------
+
+void CwxFluidSynth::ReloadPresetsFromConfigData(void)
+{
+	int Slot;
+	int Channel;
+	int SFID;
+
+	this->UnloadAllSoundFonts(false);
 
 	// Loop over all sound fonts and load them into engine (LoadPresetConfiguration only init the file names)
 	for (Slot = 0; Slot < MAX_SOUND_FONTS; Slot++)
@@ -747,8 +761,8 @@ void CwxFluidSynth::LoadPresetFile(wxString PresetFileName)
 	// Once soundfonts are loaded, we can now send Program Change to all channels
 	for (Channel = 0; Channel < 16; Channel++)
 	{
-        // Set each channel in OMNI OFF / POLY ON
-        //fluid_synth_set_basic_channel(this->synth, Slot, FLUID_CHANNEL_MODE_OMNIOFF_POLY, 16);
+		// Set each channel in OMNI OFF / POLY ON
+		//fluid_synth_set_basic_channel(this->synth, Slot, FLUID_CHANNEL_MODE_OMNIOFF_POLY, 16);
 
 		if (this->SoundFontSlotForMIDIChannel[Channel] != -1)
 		{
@@ -773,7 +787,7 @@ void CwxFluidSynth::LoadPresetFile(wxString PresetFileName)
 	this->SetChorusDepth(this->ChorusDepthControl);
 	this->SetChorusLevel(this->ChorusLevelControl);
 	this->SetChorusWave(this->ChorusWaveTriangle);
-}  // CwxFluidSynth::LoadPresetFile
+}  // CwxFluidSynth::ReloadPresetsFromConfigData
 // -----------------------------------------------------
 
 void CwxFluidSynth::StartMIDI(void)

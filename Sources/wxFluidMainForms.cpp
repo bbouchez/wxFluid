@@ -129,7 +129,7 @@ AboutDialog::AboutDialog( wxWindow* parent, wxWindowID id, const wxString& title
 	name->Wrap( -1 );
 	name->SetFont( wxFont( 18, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD, false, wxEmptyString ) );
 
-	sizer->Add( name, 0, wxALIGN_CENTER_HORIZONTAL|wxBOTTOM|wxEXPAND, 10 );
+	sizer->Add( name, 0, wxBOTTOM|wxEXPAND, 10 );
 
 	AppVersion = new wxStaticText( this, wxID_ANY, wxT("Application Version"), wxDefaultPosition, wxDefaultSize, 0 );
 	AppVersion->Wrap( -1 );

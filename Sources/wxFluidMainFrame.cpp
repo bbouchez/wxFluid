@@ -328,6 +328,7 @@ void wxFluidMainFrame::OnMenuClearPresets(wxCommandEvent& WXUNUSED(event))
     ConfigChanged = false;
 	GSynth->ClearPresets();
 	this->SetTitle("wxFluid");
+	this->PresetFileName = "";		// This will force to call Save As if we try to save
 	this->UpdateFrontPanel();
 }  // wxFluidMainFrame::OnMenuClearPresets
 // -----------------------------------------------------
@@ -474,7 +475,8 @@ void wxFluidMainFrame::OnConfigureSoundFontsPresets(wxCommandEvent& WXUNUSED(eve
 	Dialog = new CSoundFontPresetManager(this, GSynth);
 	if (Dialog)
 	{
-		Dialog->ShowModal();
+		if (Dialog->ShowModal() == wxID_OK)
+			GSynth->ReloadPresetsFromConfigData();
 		delete Dialog;
 	}
 }  // wxFluidMainFrame::OnConfigureSoundFontsPresets

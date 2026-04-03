@@ -147,7 +147,7 @@ public:
 	//\! returns SoundFont ID
 	int LoadSoundFont(wxString& SFPath, unsigned int Position);
 	//! Unload the soundfont loaded in the indicated slot
-	void UnloadSoundFont(unsigned int Position);
+	void UnloadSoundFont(unsigned int Position, bool ClearNameInConfig);
 
 	// Methods to adjust font panel parameters
 	void SetVolume(float Volume);
@@ -169,10 +169,13 @@ public:
 
 	int SavePresetConfiguration(wxString PresetFileName);
 
-	//! Stop all notes and unload all soundfonts
+	//! Stop all notes, unload all soundfonts and set front panel commands to default
 	void ClearPresets(void);
 	//! Load a presets file into synth (loads soundfonts and initialize all channels)
 	void LoadPresetFile(wxString PresetFileName);
+	//! Reload all soundfonts and presets from current configuration data (not from file)
+	// Used mainly to solve the issue when configuration is changed from the Preset dialog (engine does not reload presets properly after a SoundFont change)
+	void ReloadPresetsFromConfigData(void);
 
 	//! Start MIDI processing based on configuration parameters
 	void StartMIDI(void);
@@ -196,6 +199,9 @@ private:
 
 	//! Load preset data into memory but does not load soundfonts and does not initialize channels
 	int LoadPresetConfiguration(wxString& PresetFileName);
+
+	//! Unload all SoundFonts from the synth engine
+	void UnloadAllSoundFonts(bool ClearNameInConfig);
 };
 
 #endif

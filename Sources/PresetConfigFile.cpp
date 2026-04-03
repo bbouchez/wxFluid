@@ -99,7 +99,7 @@ int CwxFluidSynth::SavePresetConfiguration(wxString PresetFileName)
 	for (ChannelCounter = 0; ChannelCounter < 16; ChannelCounter++)
 	{
 		if (this->SoundFontSlotForMIDIChannel[ChannelCounter] != -1)
-		{  // Sound defined for this channel
+		{  // Preset defined for this channel
 			ParamStr = "    <preset channel=\"" + wxString::Format("%d", ChannelCounter) + "\" ";
 			ParamStr += "soundfont=\"" + wxString::Format("%d", this->SoundFontSlotForMIDIChannel[ChannelCounter]) + "\" ";
 			ParamStr += "bank=\"" + wxString::Format("%d", this->PresetBank[ChannelCounter]) + "\" ";

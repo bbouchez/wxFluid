@@ -40,19 +40,17 @@ class CSoundFontPresetManagerDialog : public wxDialog
 		wxButton* BtnLoad;
 		wxButton* BtnUnLoad;
 		wxButton* BtnTestSFLib;
-		wxButton* BtnDoneSF;
 		wxPanel* PresetPanel;
 		wxGrid* PresetGrid;
-		wxButton* BtnDonePresets;
 
 		// Virtual event handlers, override them in your derived class
+		virtual void OnClose( wxCloseEvent& event ) { event.Skip(); }
 		virtual void OnNotebookPageChanged( wxNotebookEvent& event ) { event.Skip(); }
 		virtual void OnSFGridDblClick( wxGridEvent& event ) { event.Skip(); }
 		virtual void OnSFGridSelected( wxGridEvent& event ) { event.Skip(); }
 		virtual void OnBtnLoad( wxCommandEvent& event ) { event.Skip(); }
 		virtual void OnBtnUnload( wxCommandEvent& event ) { event.Skip(); }
 		virtual void OnBtnTestSFLib( wxCommandEvent& event ) { event.Skip(); }
-		virtual void OnBtnDone( wxCommandEvent& event ) { event.Skip(); }
 		virtual void OnPresetGridChange( wxGridEvent& event ) { event.Skip(); }
 		virtual void OnPresetGridSelected( wxGridEvent& event ) { event.Skip(); }
 

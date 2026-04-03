@@ -30,7 +30,7 @@
 #define __WXFLUIDAPPCONFIG_H__
 
 #define WXFLUID_VERSION		2
-#define WXFLUID_REVISION	0
+#define WXFLUID_REVISION	1
 #define WXFLUID_SUBREVISION	0
 
 //! MIDI networking modes

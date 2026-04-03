@@ -63,12 +63,6 @@ CSoundFontPresetManagerDialog::CSoundFontPresetManagerDialog( wxWindow* parent, 
 	BtnSizerSF->Add( BtnTestSFLib, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 
 
-	BtnSizerSF->Add( 0, 0, 1, wxEXPAND, 5 );
-
-	BtnDoneSF = new wxButton( SoundFontPanel, wxID_ANY, wxT("Done"), wxDefaultPosition, wxDefaultSize, 0 );
-	BtnSizerSF->Add( BtnDoneSF, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
-
-
 	bSizer7->Add( BtnSizerSF, 1, wxEXPAND, 5 );
 
 
@@ -114,12 +108,6 @@ CSoundFontPresetManagerDialog::CSoundFontPresetManagerDialog( wxWindow* parent, 
 	BtnSizerPreset = new wxBoxSizer( wxHORIZONTAL );
 
 
-	BtnSizerPreset->Add( 0, 0, 1, wxEXPAND, 5 );
-
-	BtnDonePresets = new wxButton( PresetPanel, wxID_ANY, wxT("Done"), wxDefaultPosition, wxDefaultSize, 0 );
-	BtnSizerPreset->Add( BtnDonePresets, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
-
-
 	bSizer9->Add( BtnSizerPreset, 1, wxEXPAND, 5 );
 
 
@@ -137,30 +125,28 @@ CSoundFontPresetManagerDialog::CSoundFontPresetManagerDialog( wxWindow* parent, 
 	this->Centre( wxBOTH );
 
 	// Connect Events
+	this->Connect( wxEVT_CLOSE_WINDOW, wxCloseEventHandler( CSoundFontPresetManagerDialog::OnClose ) );
 	SFPresetNoteBook->Connect( wxEVT_COMMAND_NOTEBOOK_PAGE_CHANGED, wxNotebookEventHandler( CSoundFontPresetManagerDialog::OnNotebookPageChanged ), NULL, this );
 	SFGrid->Connect( wxEVT_GRID_CELL_LEFT_DCLICK, wxGridEventHandler( CSoundFontPresetManagerDialog::OnSFGridDblClick ), NULL, this );
 	SFGrid->Connect( wxEVT_GRID_SELECT_CELL, wxGridEventHandler( CSoundFontPresetManagerDialog::OnSFGridSelected ), NULL, this );
 	BtnLoad->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( CSoundFontPresetManagerDialog::OnBtnLoad ), NULL, this );
 	BtnUnLoad->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( CSoundFontPresetManagerDialog::OnBtnUnload ), NULL, this );
 	BtnTestSFLib->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( CSoundFontPresetManagerDialog::OnBtnTestSFLib ), NULL, this );
-	BtnDoneSF->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( CSoundFontPresetManagerDialog::OnBtnDone ), NULL, this );
 	PresetGrid->Connect( wxEVT_GRID_CELL_CHANGED, wxGridEventHandler( CSoundFontPresetManagerDialog::OnPresetGridChange ), NULL, this );
 	PresetGrid->Connect( wxEVT_GRID_SELECT_CELL, wxGridEventHandler( CSoundFontPresetManagerDialog::OnPresetGridSelected ), NULL, this );
-	BtnDonePresets->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( CSoundFontPresetManagerDialog::OnBtnDone ), NULL, this );
 }
 
 CSoundFontPresetManagerDialog::~CSoundFontPresetManagerDialog()
 {
 	// Disconnect Events
+	this->Disconnect( wxEVT_CLOSE_WINDOW, wxCloseEventHandler( CSoundFontPresetManagerDialog::OnClose ) );
 	SFPresetNoteBook->Disconnect( wxEVT_COMMAND_NOTEBOOK_PAGE_CHANGED, wxNotebookEventHandler( CSoundFontPresetManagerDialog::OnNotebookPageChanged ), NULL, this );
 	SFGrid->Disconnect( wxEVT_GRID_CELL_LEFT_DCLICK, wxGridEventHandler( CSoundFontPresetManagerDialog::OnSFGridDblClick ), NULL, this );
 	SFGrid->Disconnect( wxEVT_GRID_SELECT_CELL, wxGridEventHandler( CSoundFontPresetManagerDialog::OnSFGridSelected ), NULL, this );
 	BtnLoad->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( CSoundFontPresetManagerDialog::OnBtnLoad ), NULL, this );
 	BtnUnLoad->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( CSoundFontPresetManagerDialog::OnBtnUnload ), NULL, this );
 	BtnTestSFLib->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( CSoundFontPresetManagerDialog::OnBtnTestSFLib ), NULL, this );
-	BtnDoneSF->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( CSoundFontPresetManagerDialog::OnBtnDone ), NULL, this );
 	PresetGrid->Disconnect( wxEVT_GRID_CELL_CHANGED, wxGridEventHandler( CSoundFontPresetManagerDialog::OnPresetGridChange ), NULL, this );
 	PresetGrid->Disconnect( wxEVT_GRID_SELECT_CELL, wxGridEventHandler( CSoundFontPresetManagerDialog::OnPresetGridSelected ), NULL, this );
-	BtnDonePresets->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( CSoundFontPresetManagerDialog::OnBtnDone ), NULL, this );
 
 }

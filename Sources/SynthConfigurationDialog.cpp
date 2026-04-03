@@ -425,7 +425,7 @@ void CFluidConfigDialog::OnAudioDriverChoice(wxCommandEvent& WXUNUSED(event))
 	}
 	else
 	{  // WASAPI
-		if (this->FillWASAPIDeviceList(EmptyName) == WINDOWS_WASAPI_DRIVER)
+		if (this->FillWASAPIDeviceList(EmptyName) == 0)		// No WASAPI device found
 		{
 			wxMessageBox("No WASAPI output device available on this computer", "WASAPI Error", wxOK + wxICON_WARNING);
 		}

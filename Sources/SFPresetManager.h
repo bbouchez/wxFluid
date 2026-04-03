@@ -42,9 +42,11 @@ class CSoundFontPresetManager : public CSoundFontPresetManagerDialog
 public:
 	CSoundFontPresetManager(wxWindow* Parent, CwxFluidSynth* FluidSynth);
 
+	void OnClose(wxCloseEvent& event);
+
 	void OnBtnLoad(wxCommandEvent& event);
 	void OnBtnUnload(wxCommandEvent& event);
-	void OnBtnDone(wxCommandEvent& event);
+	//void OnBtnDone(wxCommandEvent& event);
 	
 	void OnNotebookPageChanged(wxNotebookEvent& event);
 

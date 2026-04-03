@@ -113,10 +113,21 @@ void CSoundFontPresetManager::OnBtnUnload(wxCommandEvent& WXUNUSED(event))
 		return;
 	}
 
-	// TODO : add a confirmation message box before removing the soundfont
+	// TODO : maybe add a confirmation message box before removing the soundfont
+
+	// Deactivate all channels using the soundfont, as loading a soundfont does not load any preset
+	// This forces the user to select a soundfont and a preset, so it is reloaded in the engine
+	for (int Channel = 0; Channel < 16; Channel++)
+	{
+		if (this->Synth->SoundFontSlotForMIDIChannel[Channel] == this->SelectedSFLine)
+		{
+			this->Synth->SoundFontSlotForMIDIChannel[Channel] = -1;
+		}
+	}
+
 	ConfigChanged = true;
 	this->Synth->PresetConfigurationChanged = true;
-	Synth->UnloadSoundFont(SelectedSFLine);
+	Synth->UnloadSoundFont(SelectedSFLine, true);
 	this->SFGrid->SetCellValue(this->SelectedSFLine, 0, "");
 
 	this->RebuildSoundFontList();
@@ -124,10 +135,10 @@ void CSoundFontPresetManager::OnBtnUnload(wxCommandEvent& WXUNUSED(event))
 }  // CSoundFontPresetManager::OnBtnUnload
 // -----------------------------------------------------
 
-void CSoundFontPresetManager::OnBtnDone(wxCommandEvent& WXUNUSED(event))
+void CSoundFontPresetManager::OnClose(wxCloseEvent& WXUNUSED(event))
 {
 	this->EndModal(wxID_OK);
-}  // CSoundFontPresetManager::OnBtnDone
+}  // CSoundFontPresetManager::OnClose
 // -----------------------------------------------------
 
 void CSoundFontPresetManager::OnSFGridSelected(wxGridEvent& event)
@@ -164,30 +175,29 @@ void CSoundFontPresetManager::LoadSoundFontInSlot(void)
 		// If there was already a SoundFont loaded in this slot, unload it
 		ConfigChanged = true;
 		this->Synth->PresetConfigurationChanged = true;
-		Synth->UnloadSoundFont(SelectedSFLine);
+		Synth->UnloadSoundFont(SelectedSFLine, true);
 		this->SFGrid->SetCellValue(this->SelectedSFLine, 0, "");
 
 		FilePath = dialog.GetPath();
 		SFID = this->Synth->LoadSoundFont(FilePath, SelectedSFLine);
+
+		// Deactivate all channels using the soundfont, as loading a soundfont does not load any preset
+		// This forces the user to select a soundfont and a preset, so it is reloaded in the engine
+		for (int Channel = 0; Channel < 16; Channel++)
+		{
+			if (this->Synth->SoundFontSlotForMIDIChannel[Channel] == this->SelectedSFLine)
+			{
+				this->Synth->SoundFontSlotForMIDIChannel[Channel] = -1;
+			}
+		}
+
+		this->RebuildSoundFontList();
+		this->RefreshPresetGrid();
+		this->SFGrid->SetCellValue(this->SelectedSFLine, 0, FilePath);
+
 		if (SFID <= 0)
 		{
 			wxMessageBox("Can not load the SoundFont file", "Error", wxOK + wxICON_ERROR);
-		}
-		else
-		{
-			// Deactivate all channels using the soundfont, as loading a soundfont does not load any preset
-			// This force the user to select a soundfont and a preset, so it is reloaded in the engine
-			for (int Channel = 0; Channel < 16; Channel++)
-			{
-				if (this->Synth->SoundFontSlotForMIDIChannel[Channel] == this->SelectedSFLine)
-				{
-					this->Synth->SoundFontSlotForMIDIChannel[Channel] = -1;
-				}
-			}
-
-			this->RebuildSoundFontList();
-			this->RefreshPresetGrid();
-			this->SFGrid->SetCellValue(this->SelectedSFLine, 0, FilePath);
 		}
 	}
 }  // CSoundFontPresetManager::LoadSoundFontInSlot
