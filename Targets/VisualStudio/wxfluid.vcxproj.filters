@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\rtmidi-5.0.0\RtMidi.cpp">
-      <Filter>Sources\rtmidi</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\..\SDK\beb\common_src\SystemSleep.cpp">
       <Filter>Sources\SDK</Filter>
     </ClCompile>
@@ -76,22 +73,31 @@
     <ClCompile Include="..\..\NetUMP\UMP_Transcoder.c">
       <Filter>Sources\NetUMP</Filter>
     </ClCompile>
-    <ClCompile Include="..\Sources\SynthConfigurationDialog.cpp">
-      <Filter>Sources\Forms</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\..\SDK\beb\common_src\CThread.cpp">
       <Filter>Sources\SDK</Filter>
     </ClCompile>
     <ClCompile Include="..\Sources\VirtualKeyboard.cpp">
       <Filter>Sources\Forms</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\rtaudio\include\asio.cpp">
+      <Filter>Sources\rtaudio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtaudio\include\asiodrivers.cpp">
+      <Filter>Sources\rtaudio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtaudio\include\asiolist.cpp">
+      <Filter>Sources\rtaudio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\AudioConfigurationDialog.cpp">
+      <Filter>Sources\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtmidi-6.0.0\RtMidi.cpp">
+      <Filter>Sources\rtmidi</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\fluidsynth\include\fluidsynth.h">
       <Filter>Sources</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\rtmidi-5.0.0\RtMidi.h">
-      <Filter>Sources\rtmidi</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\SDK\beb\common_src\SystemSleep.h">
       <Filter>Sources\SDK</Filter>
@@ -156,14 +162,17 @@
     <ClInclude Include="..\Sources\SFPresetManager.h">
       <Filter>Sources\Forms</Filter>
     </ClInclude>
-    <ClInclude Include="..\Sources\SynthConfigurationDialog.h">
-      <Filter>Sources\Forms</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\..\SDK\beb\common_src\CThread.h">
       <Filter>Sources\SDK</Filter>
     </ClInclude>
     <ClInclude Include="..\Sources\VirtualKeyboard.h">
       <Filter>Sources\Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\AudioConfigurationDialog.h">
+      <Filter>Sources\Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtmidi-6.0.0\RtMidi.h">
+      <Filter>Sources\rtmidi</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
