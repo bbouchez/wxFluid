@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
-	<ActiveTarget name="Release" />
-	<File name="../RTP-MIDI/RTP_MIDI.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<ActiveTarget name="Debug" />
+	<File name="../NetUMP/NetUMP.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="23520" topLine="682" />
+			<Cursor1 position="0" topLine="44" />
 		</Cursor>
 	</File>
-	<File name="Sources/wxFluidMainFrame.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../NetUMP/UMP_Transcoder.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="10502" topLine="244" />
+			<Cursor1 position="0" topLine="27" />
 		</Cursor>
 	</File>
-	<File name="Sources/MIDIConfigurationDialog.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../rtaudio/RtAudio.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4995" topLine="245" />
+		</Cursor>
+	</File>
+	<File name="Sources/wxFluidApp.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="19" />
+		</Cursor>
+	</File>
+	<File name="Sources/MIDIConfigurationDialog.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="2127" topLine="43" />
 		</Cursor>
 	</File>
 	<File name="Sources/SynthClass.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="513" topLine="1" />
+			<Cursor1 position="1533" topLine="69" />
+		</Cursor>
+	</File>
+	<File name="../RTP-MIDI/RTP_MIDI.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="23520" topLine="682" />
+		</Cursor>
+	</File>
+	<File name="Sources/wxFluidMainFrame.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="12801" topLine="304" />
+		</Cursor>
+	</File>
+	<File name="Sources/SynthClass.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="35723" topLine="1010" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

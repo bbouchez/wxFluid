@@ -37,16 +37,19 @@
 			<Add option="`wx-config --cflags`" />
 			<Add option="-D__TARGET_LINUX__" />
 			<Add option="-D__LINUX_ALSA__" />
+			<Add option="-D__UNIX_JACK__" />
 			<Add directory="/home/benoit/SDK/beb/common_src" />
 			<Add directory="../RTP-MIDI" />
 			<Add directory="../NetUMP" />
-			<Add directory="../rtmidi-5.0.0" />
 			<Add directory="/home/benoit/SDK/wxIndustrialControls" />
+			<Add directory="../rtmidi-6.0.0" />
+			<Add directory="../rtaudio" />
 		</Compiler>
 		<Linker>
 			<Add option="`wx-config --libs`" />
 			<Add library="fluidsynth" />
 			<Add library="asound" />
+			<Add library="jack" />
 		</Linker>
 		<Unit filename="../../../../SDK/beb/common_src/CThread.cpp" />
 		<Unit filename="../../../../SDK/beb/common_src/CThread.h" />
@@ -70,8 +73,12 @@
 		<Unit filename="../RTP-MIDI/RTP_MIDI.h" />
 		<Unit filename="../RTP-MIDI/RTP_MIDI_AppleProtocol.cpp" />
 		<Unit filename="../RTP-MIDI/RTP_MIDI_Input.cpp" />
-		<Unit filename="../rtmidi-5.0.0/RtMidi.cpp" />
-		<Unit filename="../rtmidi-5.0.0/RtMidi.h" />
+		<Unit filename="../rtaudio/RtAudio.cpp" />
+		<Unit filename="../rtaudio/RtAudio.h" />
+		<Unit filename="../rtmidi-6.0.0/RtMidi.cpp" />
+		<Unit filename="../rtmidi-6.0.0/RtMidi.h" />
+		<Unit filename="Sources/AudioConfigurationDialog.cpp" />
+		<Unit filename="Sources/AudioConfigurationDialog.h" />
 		<Unit filename="Sources/EngineConfigFile.cpp" />
 		<Unit filename="Sources/MIDIConfigurationDialog.cpp" />
 		<Unit filename="Sources/MIDIConfigurationDialog.h" />
@@ -82,8 +89,6 @@
 		<Unit filename="Sources/SFPresetManager.h" />
 		<Unit filename="Sources/SynthClass.cpp" />
 		<Unit filename="Sources/SynthClass.h" />
-		<Unit filename="Sources/SynthConfigurationDialog.cpp" />
-		<Unit filename="Sources/SynthConfigurationDialog.h" />
 		<Unit filename="Sources/VirtualKeyboard.cpp" />
 		<Unit filename="Sources/VirtualKeyboard.h" />
 		<Unit filename="Sources/VirtualKeyboardForms.cpp" />

@@ -1938,7 +1938,7 @@
 	"RtAudio.h"
 	<alsa/asoundlib.h>
 
-1760965829 source:/home/benoit/SDK/beb/common_src/network.cpp
+1787230170 source:/home/benoit/SDK/beb/common_src/network.cpp
 	<vcl.h>
 	"network.h"
 	<string.h>
@@ -1960,7 +1960,7 @@
 	<winsock.h>
 	<winsock2.h>
 
-1720334472 source:/home/benoit/SDK/beb/common_src/SystemSleep.cpp
+1787230111 source:/home/benoit/SDK/beb/common_src/SystemSleep.cpp
 	"SystemSleep.h"
 	<windows.h>
 	<unistd.h>
@@ -3722,7 +3722,7 @@
 	<netinet/in.h>
 	<arpa/inet.h>
 
-1761913213 /home/benoit/SDK/beb/common_src/CThread.h
+1780921006 /home/benoit/SDK/beb/common_src/CThread.h
 	<pthread.h>
 
 1726152045 source:/home/benoit/MIDI20/wxFluid/Sources/PresetConfigFile.cpp
@@ -3778,7 +3778,7 @@
 	"wxFluidFontSelectorForm.h"
 	"SynthClass.h"
 
-1702536112 source:/home/benoit/SDK/beb/common_src/CThread.cpp
+1780921006 source:/home/benoit/SDK/beb/common_src/CThread.cpp
 	<vcl.h>
 	<windows.h>
 	"string.h"
@@ -3870,37 +3870,37 @@
 1734939760 source:/home/benoit/MIDI20/NetUMP/UMP_Transcoder.c
 	"UMP_Transcoder.h"
 
-1720609312 source:/home/benoit/SDK/wxIndustrialControls/wxAnimKnob.cpp
+1781542939 source:/home/benoit/SDK/wxIndustrialControls/wxAnimKnob.cpp
 	"wxAnimKnob.h"
 
-1713606277 /home/benoit/SDK/wxIndustrialControls/wxAnimKnob.h
+1781542608 /home/benoit/SDK/wxIndustrialControls/wxAnimKnob.h
 	"wx/wxprec.h"
 	"wx/wx.h"
 
-1707064136 source:/home/benoit/SDK/wxIndustrialControls/wxOnOffBitmapButton.cpp
+1781542608 source:/home/benoit/SDK/wxIndustrialControls/wxOnOffBitmapButton.cpp
 	"wxOnOffBitmapButton.h"
 
-1707164976 /home/benoit/SDK/wxIndustrialControls/wxOnOffBitmapButton.h
+1781542608 /home/benoit/SDK/wxIndustrialControls/wxOnOffBitmapButton.h
 	"wx/wxprec.h"
 	"wx/wx.h"
 
-1770562456 source:/home/benoit/MIDI20/Projects/wxApps/NetUMP/NetUMP.cpp
+1787946096 source:/home/benoit/MIDI20/Projects/wxApps/NetUMP/NetUMP.cpp
 	"NetUMP.h"
 	"SystemSleep.h"
 	<stdio.h>
 
-1740171897 /home/benoit/MIDI20/Projects/wxApps/NetUMP/NetUMP.h
+1787945700 /home/benoit/MIDI20/Projects/wxApps/NetUMP/NetUMP.h
 	"network.h"
 	<string.h>
 	<stdint.h>
 
-1716840618 source:/home/benoit/MIDI20/Projects/wxApps/NetUMP/NetUMP_SessionProtocol.cpp
+1780920548 source:/home/benoit/MIDI20/Projects/wxApps/NetUMP/NetUMP_SessionProtocol.cpp
 	"NetUMP.h"
 
-1736106755 source:/home/benoit/MIDI20/Projects/wxApps/NetUMP/UMP_Transcoder.c
+1785247125 source:/home/benoit/MIDI20/Projects/wxApps/NetUMP/UMP_Transcoder.c
 	"UMP_Transcoder.h"
 
-1734939958 /home/benoit/MIDI20/Projects/wxApps/NetUMP/UMP_Transcoder.h
+1785233906 /home/benoit/MIDI20/Projects/wxApps/NetUMP/UMP_Transcoder.h
 	<stdint.h>
 
 1637083177 source:/home/benoit/MIDI20/Projects/wxApps/rtmidi-5.0.0/RtMidi.cpp
@@ -3928,7 +3928,7 @@
 	<string>
 	<vector>
 
-1774632763 source:/home/benoit/MIDI20/Projects/wxApps/RTP-MIDI/RTP_MIDI.cpp
+1779081647 source:/home/benoit/MIDI20/Projects/wxApps/RTP-MIDI/RTP_MIDI.cpp
 	"RTP_MIDI.h"
 	<string.h>
 	<stdlib.h>
@@ -3956,7 +3956,7 @@
 1730296039 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/libsoundfont.h
 	<stdint.h>
 
-1774855238 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/EngineConfigFile.cpp
+1781292581 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/EngineConfigFile.cpp
 	<stdio.h>
 	<wx/xml/xml.h>
 	"SynthClass.h"
@@ -3967,19 +3967,20 @@
 	<netinet/in.h>
 	<arpa/inet.h>
 
-1774855560 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/SynthClass.h
+1781338859 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/SynthClass.h
 	"wx/wxprec.h"
 	"wx/wx.h"
 	"/opt/local/include/fluidsynth.h"
 	"fluidsynth.h"
 	"wxFluidAppConfig.h"
 	"RtMidi.h"
+	"RtAudio.h"
 	"RTP_MIDI.h"
 	"NetUMP.h"
 	"CThread.h"
 	"SystemSleep.h"
 
-1774855773 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidAppConfig.h
+1781271408 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidAppConfig.h
 
 1774854878 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/MIDIConfigurationDialog.cpp
 	"MIDIConfigurationDialog.h"
@@ -3997,7 +3998,7 @@
 	"PropertiesForm.h"
 	"SynthClass.h"
 
-1735829935 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/PropertiesForm.h
+1781380111 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/PropertiesForm.h
 	<wx/artprov.h>
 	<wx/xrc/xmlres.h>
 	<wx/string.h>
@@ -4007,33 +4008,32 @@
 	<wx/colour.h>
 	<wx/settings.h>
 	<wx/choice.h>
-	<wx/spinctrl.h>
+	<wx/textctrl.h>
 	<wx/checkbox.h>
 	<wx/sizer.h>
-	<wx/panel.h>
+	<wx/button.h>
 	<wx/bitmap.h>
 	<wx/image.h>
 	<wx/icon.h>
-	<wx/textctrl.h>
-	<wx/notebook.h>
-	<wx/button.h>
 	<wx/dialog.h>
+	<wx/spinctrl.h>
+	<wx/panel.h>
 	<wx/radiobox.h>
 	<wx/statbox.h>
 
-1774855560 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/PresetConfigFile.cpp
+1775208677 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/PresetConfigFile.cpp
 	<stdio.h>
 	<wx/xml/xml.h>
 	"SynthClass.h"
 
-1735829935 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/PropertiesForm.cpp
+1781541947 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/PropertiesForm.cpp
 	"PropertiesForm.h"
 
-1774855803 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/SynthClass.cpp
+1788542320 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/SynthClass.cpp
 	"SynthClass.h"
 	"UMP_Transcoder.h"
 
-1774855043 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/SynthConfigurationDialog.cpp
+1775220511 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/SynthConfigurationDialog.cpp
 	"SynthConfigurationDialog.h"
 	<mmsystem.h>
 	"RtAudio.h"
@@ -4054,7 +4054,7 @@
 	"VirtualKeyboardForms.h"
 	"SynthClass.h"
 
-1735919953 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/VirtualKeyboardForms.h
+1787397630 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/VirtualKeyboardForms.h
 	<wx/artprov.h>
 	<wx/xrc/xmlres.h>
 	<wx/panel.h>
@@ -4069,7 +4069,7 @@
 	<wx/sizer.h>
 	<wx/frame.h>
 
-1735919953 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/VirtualKeyboardForms.cpp
+1787397630 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/VirtualKeyboardForms.cpp
 	"VirtualKeyboardForms.h"
 
 1721630060 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidControllersForm.cpp
@@ -4089,10 +4089,10 @@
 	<wx/panel.h>
 	<wx/frame.h>
 
-1774468491 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidFontSelectorForm.cpp
+1775130366 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidFontSelectorForm.cpp
 	"wxFluidFontSelectorForm.h"
 
-1774467408 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidFontSelectorForm.h
+1775130294 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidFontSelectorForm.h
 	<wx/artprov.h>
 	<wx/xrc/xmlres.h>
 	<wx/colour.h>
@@ -4110,10 +4110,10 @@
 	<wx/notebook.h>
 	<wx/dialog.h>
 
-1736074181 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidMainForms.cpp
+1781422113 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidMainForms.cpp
 	"wxFluidMainForms.h"
 
-1735918003 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidMainForms.h
+1781422113 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidMainForms.h
 	<wx/artprov.h>
 	<wx/xrc/xmlres.h>
 	<wx/string.h>
@@ -4134,25 +4134,25 @@
 	<wx/stattext.h>
 	<wx/dialog.h>
 
-1774855588 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/SFPresetManager.cpp
+1788530797 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/SFPresetManager.cpp
 	"SFPresetManager.h"
 
-1774855043 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/SFPresetManager.h
+1775129948 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/SFPresetManager.h
 	"wx/wxprec.h"
 	"wx/wx.h"
 	"wxFluidFontSelectorForm.h"
 	"SynthClass.h"
 
-1774855773 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidApp.cpp
+1788380080 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidApp.cpp
 	"wxFluidApp.h"
 	"wxFluidMainFrame.h"
 	"network.h"
 
-1774855773 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidApp.h
+1775120168 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidApp.h
 	"wx/wxprec.h"
 	"wx/wx.h"
 
-1774855773 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidMainFrame.h
+1781335372 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidMainFrame.h
 	"wx/wxprec.h"
 	"wx/wx.h"
 	"wxFluidAppConfig.h"
@@ -4169,13 +4169,136 @@
 	"SynthClass.h"
 	"wxAnimKnob.h"
 
-1774855773 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidMainFrame.cpp
+1781542009 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/wxFluidMainFrame.cpp
 	"wxFluidMainFrame.h"
 	"wxFluidApp.h"
 	"fluidsynth.h"
 	"rtaudio.h"
-	"SynthConfigurationDialog.h"
+	"AudioConfigurationDialog.h"
 	"MIDIConfigurationDialog.h"
 	"SynthClass.h"
 	"SFPresetManager.h"
+
+1781293187 /home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/AudioConfigurationDialog.h
+	"wx/wxprec.h"
+	"wx/wx.h"
+	"PropertiesForm.h"
+	"SynthClass.h"
+
+1691079012 /home/benoit/MIDI20/Projects/wxApps/rtmidi-6.0.0/RtMidi.h
+	<exception>
+	<iostream>
+	<string>
+	<vector>
+
+1712683701 /home/benoit/MIDI20/Projects/wxApps/rtaudio/RtAudio.h
+	<string>
+	<vector>
+	<iostream>
+	<functional>
+	<windows.h>
+	<process.h>
+	<stdint.h>
+	<pthread.h>
+	<sys/time.h>
+	<sstream>
+
+1781380649 source:/home/benoit/MIDI20/Projects/wxApps/wxFluid/Sources/AudioConfigurationDialog.cpp
+	"AudioConfigurationDialog.h"
+	"RtAudio.h"
+	<alsa/asoundlib.h>
+
+1691079012 source:/home/benoit/MIDI20/Projects/wxApps/rtmidi-6.0.0/RtMidi.cpp
+	"RtMidi.h"
+	<sstream>
+	<TargetConditionals.h>
+	<mach/mach_time.h>
+	<CoreMIDI/CoreMIDI.h>
+	<amidi/AMidi.h>
+	<android/log.h>
+	<pthread.h>
+	<atomic>
+	<string>
+	<vector>
+	<jni.h>
+	<unistd.h>
+	<CoreAudio/HostTime.h>
+	<CoreServices/CoreServices.h>
+	<pthread.h>
+	<sys/time.h>
+	<alsa/asoundlib.h>
+	<windows.h>
+	<mmsystem.h>
+	<algorithm>
+	<chrono>
+	<regex>
+	<string_view>
+	<mutex>
+	<windows.h>
+	<winrt/base.h>
+	<winrt/Windows.Foundation.h>
+	<winrt/Windows.Foundation.Collections.h>
+	<winrt/Windows.Devices.Enumeration.h>
+	<winrt/Windows.Devices.Midi.h>
+	<winrt/Windows.Storage.Streams.h>
+	<winrt/Windows.Security.Cryptography.h>
+	<jack/jack.h>
+	<jack/midiport.h>
+	<jack/ringbuffer.h>
+	<pthread.h>
+	<sched.h>
+	<semaphore.h>
+	<emscripten.h>
+	<cstdint>
+
+1712683701 source:/home/benoit/MIDI20/Projects/wxApps/rtaudio/RtAudio.cpp
+	"RtAudio.h"
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<climits>
+	<cmath>
+	<algorithm>
+	<codecvt>
+	<locale>
+	<windows.h>
+	<CoreAudio/AudioHardware.h>
+	<jack/jack.h>
+	<pulse/pulseaudio.h>
+	<sys/soundcard.h>
+	<unistd.h>
+	<unistd.h>
+	<cstdio>
+	"asiosys.h"
+	"asio.h"
+	"iasiothiscallresolver.h"
+	"asiodrivers.h"
+	<cmath>
+	<mfapi.h>
+	<mferror.h>
+	<mfplay.h>
+	<mftransform.h>
+	<wmcodecdsp.h>
+	<audioclient.h>
+	<avrt.h>
+	<mmdeviceapi.h>
+	<functiondiscoverykeys_devpkey.h>
+	<windows.h>
+	<process.h>
+	<mmsystem.h>
+	<mmreg.h>
+	<dsound.h>
+	<assert.h>
+	<algorithm>
+	<alsa/asoundlib.h>
+	<unistd.h>
+	<pulse/error.h>
+	<pulse/simple.h>
+	<cstdio>
+	<unistd.h>
+	<sys/ioctl.h>
+	<unistd.h>
+	<fcntl.h>
+	<errno.h>
+	<math.h>
 
