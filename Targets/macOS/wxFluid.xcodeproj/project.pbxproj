@@ -18,7 +18,6 @@
 		FF2F6E042C3C502000599218 /* MIDIConfigurationDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DEF2C3C502000599218 /* MIDIConfigurationDialog.cpp */; };
 		FF2F6E052C3C502000599218 /* VirtualKeyboardForms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DF12C3C502000599218 /* VirtualKeyboardForms.cpp */; };
 		FF2F6E062C3C502000599218 /* wxFluidControllersForm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DF42C3C502000599218 /* wxFluidControllersForm.cpp */; };
-		FF2F6E072C3C502000599218 /* SynthConfigurationDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DF52C3C502000599218 /* SynthConfigurationDialog.cpp */; };
 		FF2F6E092C3C502000599218 /* wxFluidApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6DFB2C3C502000599218 /* wxFluidApp.cpp */; };
 		FF2F6E0D2C3C53A900599218 /* wxAnimKnob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6E0B2C3C53A900599218 /* wxAnimKnob.cpp */; };
 		FF2F6E102C3C53C300599218 /* wxOnOffBitmapButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2F6E0F2C3C53C300599218 /* wxOnOffBitmapButton.cpp */; };
@@ -29,6 +28,8 @@
 		FF445ED32C4DA079007856B6 /* NetUMP_SessionProtocol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF445ECE2C4DA079007856B6 /* NetUMP_SessionProtocol.cpp */; };
 		FF445ED62C4DA213007856B6 /* icon256.png in Resources */ = {isa = PBXBuildFile; fileRef = FF445ED52C4DA213007856B6 /* icon256.png */; };
 		FF482CB12CCCF65500737F1A /* SFPresetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF482CB02CCCF65500737F1A /* SFPresetManager.cpp */; };
+		FF496D112FE0238D00383371 /* RtAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF496D102FE0238D00383371 /* RtAudio.cpp */; };
+		FF496D142FE0290D00383371 /* AudioConfigurationDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF496D132FE0290D00383371 /* AudioConfigurationDialog.cpp */; };
 		FF583F7623E6C0840047C809 /* libwx_osx_cocoa_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF583F7523E6C0840047C809 /* libwx_osx_cocoa_static.a */; };
 		FF6583F22B05608600DA0D92 /* network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF6583EA2B05608500DA0D92 /* network.cpp */; };
 		FF6583F62B05608600DA0D92 /* CThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF6583F02B05608600DA0D92 /* CThread.cpp */; };
@@ -54,27 +55,25 @@
 		FF158B5323F2DD9000156F8F /* icons.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icons.icns; sourceTree = "<group>"; };
 		FF2F6DD12C3C4D6900599218 /* knob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = knob.png; path = Images/knob.png; sourceTree = "<group>"; };
 		FF2F6DE62C3C502000599218 /* SynthClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SynthClass.cpp; path = Sources/SynthClass.cpp; sourceTree = "<group>"; };
-		FF2F6DE72C3C502000599218 /* wxFluidMainForms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxFluidMainForms.cpp; path = Sources/wxFluidMainForms.cpp; sourceTree = "<group>"; };
+		FF2F6DE72C3C502000599218 /* wxFluidMainForms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxFluidMainForms.cpp; path = Sources/wxFormBuilder/wxFluidMainForms.cpp; sourceTree = "<group>"; };
 		FF2F6DE82C3C502000599218 /* KnobControllers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KnobControllers.cpp; path = Sources/KnobControllers.cpp; sourceTree = "<group>"; };
 		FF2F6DE92C3C502000599218 /* VirtualKeyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VirtualKeyboard.cpp; path = Sources/VirtualKeyboard.cpp; sourceTree = "<group>"; };
-		FF2F6DEA2C3C502000599218 /* PropertiesForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropertiesForm.h; path = Sources/PropertiesForm.h; sourceTree = "<group>"; };
+		FF2F6DEA2C3C502000599218 /* PropertiesForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropertiesForm.h; path = Sources/wxFormBuilder/PropertiesForm.h; sourceTree = "<group>"; };
 		FF2F6DEB2C3C502000599218 /* wxFluidMainFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxFluidMainFrame.h; path = Sources/wxFluidMainFrame.h; sourceTree = "<group>"; };
-		FF2F6DEC2C3C502000599218 /* PropertiesForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PropertiesForm.cpp; path = Sources/PropertiesForm.cpp; sourceTree = "<group>"; };
+		FF2F6DEC2C3C502000599218 /* PropertiesForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PropertiesForm.cpp; path = Sources/wxFormBuilder/PropertiesForm.cpp; sourceTree = "<group>"; };
 		FF2F6DEE2C3C502000599218 /* wxFluidMainFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxFluidMainFrame.cpp; path = Sources/wxFluidMainFrame.cpp; sourceTree = "<group>"; };
 		FF2F6DEF2C3C502000599218 /* MIDIConfigurationDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MIDIConfigurationDialog.cpp; path = Sources/MIDIConfigurationDialog.cpp; sourceTree = "<group>"; };
 		FF2F6DF02C3C502000599218 /* KnobControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnobControllers.h; path = Sources/KnobControllers.h; sourceTree = "<group>"; };
-		FF2F6DF12C3C502000599218 /* VirtualKeyboardForms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VirtualKeyboardForms.cpp; path = Sources/VirtualKeyboardForms.cpp; sourceTree = "<group>"; };
-		FF2F6DF22C3C502000599218 /* wxFluidMainForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxFluidMainForms.h; path = Sources/wxFluidMainForms.h; sourceTree = "<group>"; };
-		FF2F6DF32C3C502000599218 /* wxFluidControllersForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxFluidControllersForm.h; path = Sources/wxFluidControllersForm.h; sourceTree = "<group>"; };
-		FF2F6DF42C3C502000599218 /* wxFluidControllersForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxFluidControllersForm.cpp; path = Sources/wxFluidControllersForm.cpp; sourceTree = "<group>"; };
-		FF2F6DF52C3C502000599218 /* SynthConfigurationDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SynthConfigurationDialog.cpp; path = Sources/SynthConfigurationDialog.cpp; sourceTree = "<group>"; };
-		FF2F6DF62C3C502000599218 /* SynthConfigurationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthConfigurationDialog.h; path = Sources/SynthConfigurationDialog.h; sourceTree = "<group>"; };
+		FF2F6DF12C3C502000599218 /* VirtualKeyboardForms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VirtualKeyboardForms.cpp; path = Sources/wxFormBuilder/VirtualKeyboardForms.cpp; sourceTree = "<group>"; };
+		FF2F6DF22C3C502000599218 /* wxFluidMainForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxFluidMainForms.h; path = Sources/wxFormBuilder/wxFluidMainForms.h; sourceTree = "<group>"; };
+		FF2F6DF32C3C502000599218 /* wxFluidControllersForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxFluidControllersForm.h; path = Sources/wxFormBuilder/wxFluidControllersForm.h; sourceTree = "<group>"; };
+		FF2F6DF42C3C502000599218 /* wxFluidControllersForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxFluidControllersForm.cpp; path = Sources/wxFormBuilder/wxFluidControllersForm.cpp; sourceTree = "<group>"; };
 		FF2F6DF72C3C502000599218 /* SynthClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthClass.h; path = Sources/SynthClass.h; sourceTree = "<group>"; };
 		FF2F6DF82C3C502000599218 /* MIDIConfigurationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MIDIConfigurationDialog.h; path = Sources/MIDIConfigurationDialog.h; sourceTree = "<group>"; };
 		FF2F6DF92C3C502000599218 /* VirtualKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VirtualKeyboard.h; path = Sources/VirtualKeyboard.h; sourceTree = "<group>"; };
 		FF2F6DFB2C3C502000599218 /* wxFluidApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxFluidApp.cpp; path = Sources/wxFluidApp.cpp; sourceTree = "<group>"; };
 		FF2F6DFC2C3C502000599218 /* wxFluidApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxFluidApp.h; path = Sources/wxFluidApp.h; sourceTree = "<group>"; };
-		FF2F6DFD2C3C502000599218 /* VirtualKeyboardForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VirtualKeyboardForms.h; path = Sources/VirtualKeyboardForms.h; sourceTree = "<group>"; };
+		FF2F6DFD2C3C502000599218 /* VirtualKeyboardForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VirtualKeyboardForms.h; path = Sources/wxFormBuilder/VirtualKeyboardForms.h; sourceTree = "<group>"; };
 		FF2F6E0B2C3C53A900599218 /* wxAnimKnob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxAnimKnob.cpp; path = ../../../../SDK/beb/wxIndustrialControls/wxAnimKnob.cpp; sourceTree = "<group>"; };
 		FF2F6E0C2C3C53A900599218 /* wxAnimKnob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxAnimKnob.h; path = ../../../../SDK/beb/wxIndustrialControls/wxAnimKnob.h; sourceTree = "<group>"; };
 		FF2F6E0E2C3C53C300599218 /* wxOnOffBitmapButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxOnOffBitmapButton.h; path = ../../../../SDK/beb/wxIndustrialControls/wxOnOffBitmapButton.h; sourceTree = "<group>"; };
@@ -92,14 +91,18 @@
 		FF445ED52C4DA213007856B6 /* icon256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon256.png; path = images/icon256.png; sourceTree = "<group>"; };
 		FF482CAF2CCCF65500737F1A /* SFPresetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFPresetManager.h; path = Sources/SFPresetManager.h; sourceTree = "<group>"; };
 		FF482CB02CCCF65500737F1A /* SFPresetManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SFPresetManager.cpp; path = Sources/SFPresetManager.cpp; sourceTree = "<group>"; };
+		FF496D0F2FE0238D00383371 /* RtAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RtAudio.h; path = ../rtaudio/RtAudio.h; sourceTree = SOURCE_ROOT; };
+		FF496D102FE0238D00383371 /* RtAudio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RtAudio.cpp; path = ../rtaudio/RtAudio.cpp; sourceTree = SOURCE_ROOT; };
+		FF496D122FE0290D00383371 /* AudioConfigurationDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AudioConfigurationDialog.h; path = Sources/AudioConfigurationDialog.h; sourceTree = "<group>"; };
+		FF496D132FE0290D00383371 /* AudioConfigurationDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AudioConfigurationDialog.cpp; path = Sources/AudioConfigurationDialog.cpp; sourceTree = "<group>"; };
 		FF583F7523E6C0840047C809 /* libwx_osx_cocoa_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwx_osx_cocoa_static.a; path = ../libwx_osx_cocoa_static.a; sourceTree = "<group>"; };
 		FF6583EA2B05608500DA0D92 /* network.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = network.cpp; path = ../../../../SDK/beb/common_src/network.cpp; sourceTree = "<group>"; };
 		FF6583EC2B05608600DA0D92 /* CThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CThread.h; path = ../../../../SDK/beb/common_src/CThread.h; sourceTree = "<group>"; };
 		FF6583ED2B05608600DA0D92 /* TargetTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TargetTypes.h; path = ../../../../SDK/beb/common_src/TargetTypes.h; sourceTree = "<group>"; };
 		FF6583EE2B05608600DA0D92 /* network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = network.h; path = ../../../../SDK/beb/common_src/network.h; sourceTree = "<group>"; };
 		FF6583F02B05608600DA0D92 /* CThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CThread.cpp; path = ../../../../SDK/beb/common_src/CThread.cpp; sourceTree = "<group>"; };
-		FF7889BF2C49ACFA00538F06 /* wxFluidFontSelectorForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxFluidFontSelectorForm.h; path = Sources/wxFluidFontSelectorForm.h; sourceTree = "<group>"; };
-		FF7889C32C49ACFA00538F06 /* wxFluidFontSelectorForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxFluidFontSelectorForm.cpp; path = Sources/wxFluidFontSelectorForm.cpp; sourceTree = "<group>"; };
+		FF7889BF2C49ACFA00538F06 /* wxFluidFontSelectorForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxFluidFontSelectorForm.h; path = Sources/wxFormBuilder/wxFluidFontSelectorForm.h; sourceTree = "<group>"; };
+		FF7889C32C49ACFA00538F06 /* wxFluidFontSelectorForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxFluidFontSelectorForm.cpp; path = Sources/wxFormBuilder/wxFluidFontSelectorForm.cpp; sourceTree = "<group>"; };
 		FF9413712B0B50DF00E12321 /* SystemSleep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SystemSleep.cpp; path = ../../../../SDK/beb/common_src/SystemSleep.cpp; sourceTree = "<group>"; };
 		FF9413722B0B50DF00E12321 /* SystemSleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemSleep.h; path = ../../../../SDK/beb/common_src/SystemSleep.h; sourceTree = "<group>"; };
 		FF9413762B0B575900E12321 /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyboard.png; path = Images/keyboard.png; sourceTree = "<group>"; };
@@ -147,6 +150,7 @@
 		405B1A9710EF227D00676938 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				FF496D0E2FE0235D00383371 /* RtAudio */,
 				FF445EC52C4DA018007856B6 /* NetUMP */,
 				FF445EC42C4DA00E007856B6 /* RTP-MIDI */,
 				FF2F6E112C3C66BE00599218 /* fluidsynth.h */,
@@ -164,6 +168,8 @@
 		FF2F6DE52C3C4FF200599218 /* wxFluid */ = {
 			isa = PBXGroup;
 			children = (
+				FF496D122FE0290D00383371 /* AudioConfigurationDialog.h */,
+				FF496D132FE0290D00383371 /* AudioConfigurationDialog.cpp */,
 				FFA831EB2D28322100E9886B /* wxFluidAppConfig.h */,
 				FF2F6E0A2C3C502C00599218 /* wxFormBuilder */,
 				FF482CB02CCCF65500737F1A /* SFPresetManager.cpp */,
@@ -176,8 +182,6 @@
 				FF2F6DF82C3C502000599218 /* MIDIConfigurationDialog.h */,
 				FF2F6DE62C3C502000599218 /* SynthClass.cpp */,
 				FF2F6DF72C3C502000599218 /* SynthClass.h */,
-				FF2F6DF52C3C502000599218 /* SynthConfigurationDialog.cpp */,
-				FF2F6DF62C3C502000599218 /* SynthConfigurationDialog.h */,
 				FF2F6DE92C3C502000599218 /* VirtualKeyboard.cpp */,
 				FF2F6DF92C3C502000599218 /* VirtualKeyboard.h */,
 				FF2F6DFB2C3C502000599218 /* wxFluidApp.cpp */,
@@ -226,6 +230,15 @@
 				FF445ECF2C4DA079007856B6 /* UMP_Transcoder.h */,
 			);
 			name = NetUMP;
+			sourceTree = "<group>";
+		};
+		FF496D0E2FE0235D00383371 /* RtAudio */ = {
+			isa = PBXGroup;
+			children = (
+				FF496D0F2FE0238D00383371 /* RtAudio.h */,
+				FF496D102FE0238D00383371 /* RtAudio.cpp */,
+			);
+			path = RtAudio;
 			sourceTree = "<group>";
 		};
 		FFA08BB42B0566890024BD28 /* RtMidi */ = {
@@ -339,14 +352,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF496D112FE0238D00383371 /* RtAudio.cpp in Sources */,
 				FFFB63CA2C4D084800E6CAFF /* PresetConfigFile.cpp in Sources */,
 				FF2F6E052C3C502000599218 /* VirtualKeyboardForms.cpp in Sources */,
+				FF496D142FE0290D00383371 /* AudioConfigurationDialog.cpp in Sources */,
 				FF445ECC2C4DA031007856B6 /* RTP_MIDI_Input.cpp in Sources */,
 				FF445ED22C4DA079007856B6 /* NetUMP.cpp in Sources */,
 				FF445ED32C4DA079007856B6 /* NetUMP_SessionProtocol.cpp in Sources */,
 				FF6583F22B05608600DA0D92 /* network.cpp in Sources */,
 				FF482CB12CCCF65500737F1A /* SFPresetManager.cpp in Sources */,
-				FF2F6E072C3C502000599218 /* SynthConfigurationDialog.cpp in Sources */,
 				FF2F6E022C3C502000599218 /* PropertiesForm.cpp in Sources */,
 				FFFB63C92C4D084800E6CAFF /* EngineConfigFile.cpp in Sources */,
 				FF6583F62B05608600DA0D92 /* CThread.cpp in Sources */,
